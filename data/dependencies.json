@@ -1,0 +1,126 @@
+[
+  {
+    "service": "api-gateway",
+    "depends_on": [
+      {
+        "name": "users-api",
+        "type": "service"
+      },
+      {
+        "name": "orders-api",
+        "type": "service"
+      },
+      {
+        "name": "payments-api",
+        "type": "service"
+      },
+      {
+        "name": "auth-service",
+        "type": "service"
+      },
+      {
+        "name": "search-api",
+        "type": "service"
+      },
+      {
+        "name": "inventory-api",
+        "type": "service"
+      }
+    ]
+  },
+  {
+    "service": "users-api",
+    "depends_on": [
+      {
+        "name": "users-db",
+        "type": "database"
+      },
+      {
+        "name": "redis-cache",
+        "type": "cache"
+      }
+    ]
+  },
+  {
+    "service": "orders-api",
+    "depends_on": [
+      {
+        "name": "orders-db",
+        "type": "database"
+      },
+      {
+        "name": "payments-api",
+        "type": "service"
+      },
+      {
+        "name": "inventory-api",
+        "type": "service"
+      },
+      {
+        "name": "notification-service",
+        "type": "service"
+      }
+    ]
+  },
+  {
+    "service": "payments-api",
+    "depends_on": [
+      {
+        "name": "payments-db",
+        "type": "database"
+      },
+      {
+        "name": "payment-provider",
+        "type": "external"
+      }
+    ]
+  },
+  {
+    "service": "auth-service",
+    "depends_on": [
+      {
+        "name": "auth-db",
+        "type": "database"
+      }
+    ]
+  },
+  {
+    "service": "notification-service",
+    "depends_on": [
+      {
+        "name": "notification-queue",
+        "type": "queue"
+      },
+      {
+        "name": "email-provider",
+        "type": "external"
+      }
+    ]
+  },
+  {
+    "service": "inventory-api",
+    "depends_on": [
+      {
+        "name": "inventory-db",
+        "type": "database"
+      }
+    ]
+  },
+  {
+    "service": "search-api",
+    "depends_on": [
+      {
+        "name": "search-db",
+        "type": "database"
+      }
+    ]
+  },
+  {
+    "service": "postgres-db",
+    "depends_on": []
+  },
+  {
+    "service": "redis-cache",
+    "depends_on": []
+  }
+]

@@ -1,0 +1,1570 @@
+[
+  {
+    "log_id": "log-00001",
+    "timestamp": "2026-09-28T02:01:10Z",
+    "service": "payments-api",
+    "level": "ERROR",
+    "message": "PaymentProvider TLS handshake failed: certificate has expired (client cert CN=payments-api.acmecloud)",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00002",
+    "timestamp": "2026-09-28T02:01:11Z",
+    "service": "payments-api",
+    "level": "ERROR",
+    "message": "HTTP 502 POST /api/payments/charge - provider unavailable",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00003",
+    "timestamp": "2026-09-28T02:46:00Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Client certificate rotated; provider handshake OK",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00004",
+    "timestamp": "2026-09-29T08:00:00Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Deployment deploy-8460 started (v2.7.8 -> v2.7.9)",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00005",
+    "timestamp": "2026-09-29T08:04:12Z",
+    "service": "orders-api",
+    "level": "ERROR",
+    "message": "HTTP 500 GET /api/orders/551 - ValueError: 'SHIPPED_PARTIAL' is not a valid OrderStatus",
+    "source": "orders-api-pod"
+  },
+  {
+    "log_id": "log-00006",
+    "timestamp": "2026-09-29T08:35:00Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Deployment deploy-8461 started (rollback v2.7.9 -> v2.7.8)",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00007",
+    "timestamp": "2026-09-29T08:37:00Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Deployment deploy-8461 completed: 4/4 pods running v2.7.8",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00008",
+    "timestamp": "2026-09-29T16:03:00Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Deployment deploy-8465 completed: 4/4 pods running v2.8.0",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00009",
+    "timestamp": "2026-09-30T07:00:00Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "Deployment deploy-8470 started (v2.3.0 -> v2.3.1)",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00010",
+    "timestamp": "2026-09-30T07:02:00Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "Deployment deploy-8470 completed: 2/2 pods running v2.3.1",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00011",
+    "timestamp": "2026-09-30T08:30:00Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Deployment deploy-8480 started (v4.1.7 -> v4.2.0)",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00012",
+    "timestamp": "2026-09-30T08:34:00Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Deployment deploy-8480 completed: 3/3 pods running v4.2.0",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00013",
+    "timestamp": "2026-09-30T08:34:05Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Feature flag provider_retry_wrapper=true; ProviderRetryWrapper enabled (max_attempts=3)",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00014",
+    "timestamp": "2026-09-30T09:30:07Z",
+    "service": "api-gateway",
+    "level": "INFO",
+    "message": "Health check OK; 267 req/s over last 60s",
+    "source": "api-gateway-pod"
+  },
+  {
+    "log_id": "log-00015",
+    "timestamp": "2026-09-30T09:30:22Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Health check OK; 567 req/s over last 60s",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00016",
+    "timestamp": "2026-09-30T09:30:31Z",
+    "service": "search-api",
+    "level": "INFO",
+    "message": "Health check OK; 498 req/s over last 60s",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00017",
+    "timestamp": "2026-09-30T09:30:34Z",
+    "service": "postgres-db",
+    "level": "INFO",
+    "message": "checkpoint complete; 3 wal segments recycled",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00018",
+    "timestamp": "2026-09-30T09:30:35Z",
+    "service": "inventory-api",
+    "level": "INFO",
+    "message": "Health check OK; 250 req/s over last 60s",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00019",
+    "timestamp": "2026-09-30T09:30:39Z",
+    "service": "redis-cache",
+    "level": "INFO",
+    "message": "DB saved on disk; 276k keys",
+    "source": "redis-cache-0"
+  },
+  {
+    "log_id": "log-00020",
+    "timestamp": "2026-09-30T09:30:44Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Health check OK; 592 req/s over last 60s",
+    "source": "orders-api-pod"
+  },
+  {
+    "log_id": "log-00021",
+    "timestamp": "2026-09-30T09:30:47Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "Health check OK; 708 req/s over last 60s",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00022",
+    "timestamp": "2026-09-30T09:30:50Z",
+    "service": "users-api",
+    "level": "INFO",
+    "message": "Health check OK; 520 req/s over last 60s",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00023",
+    "timestamp": "2026-09-30T09:30:59Z",
+    "service": "auth-service",
+    "level": "INFO",
+    "message": "Health check OK; 838 req/s over last 60s",
+    "source": "auth-service-pod"
+  },
+  {
+    "log_id": "log-00024",
+    "timestamp": "2026-09-30T09:33:10Z",
+    "service": "notification-service",
+    "level": "WARN",
+    "message": "email-provider responded 429 Too Many Requests; backing off 30s",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00025",
+    "timestamp": "2026-09-30T09:34:02Z",
+    "service": "notification-service",
+    "level": "WARN",
+    "message": "email-provider responded 429 Too Many Requests; backing off 60s",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00026",
+    "timestamp": "2026-09-30T09:35:06Z",
+    "service": "users-api",
+    "level": "INFO",
+    "message": "Health check OK; 90 req/s over last 60s",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00027",
+    "timestamp": "2026-09-30T09:35:06Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Health check OK; 528 req/s over last 60s",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00028",
+    "timestamp": "2026-09-30T09:35:09Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Health check OK; 433 req/s over last 60s",
+    "source": "orders-api-pod"
+  },
+  {
+    "log_id": "log-00029",
+    "timestamp": "2026-09-30T09:35:15Z",
+    "service": "auth-service",
+    "level": "INFO",
+    "message": "Health check OK; 608 req/s over last 60s",
+    "source": "auth-service-pod"
+  },
+  {
+    "log_id": "log-00030",
+    "timestamp": "2026-09-30T09:35:23Z",
+    "service": "postgres-db",
+    "level": "INFO",
+    "message": "checkpoint complete; 6 wal segments recycled",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00031",
+    "timestamp": "2026-09-30T09:35:23Z",
+    "service": "api-gateway",
+    "level": "INFO",
+    "message": "Health check OK; 790 req/s over last 60s",
+    "source": "api-gateway-pod"
+  },
+  {
+    "log_id": "log-00032",
+    "timestamp": "2026-09-30T09:35:31Z",
+    "service": "inventory-api",
+    "level": "INFO",
+    "message": "Health check OK; 375 req/s over last 60s",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00033",
+    "timestamp": "2026-09-30T09:35:43Z",
+    "service": "search-api",
+    "level": "INFO",
+    "message": "Health check OK; 583 req/s over last 60s",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00034",
+    "timestamp": "2026-09-30T09:35:52Z",
+    "service": "redis-cache",
+    "level": "INFO",
+    "message": "DB saved on disk; 789k keys",
+    "source": "redis-cache-0"
+  },
+  {
+    "log_id": "log-00035",
+    "timestamp": "2026-09-30T09:35:56Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "Health check OK; 282 req/s over last 60s",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00036",
+    "timestamp": "2026-09-30T09:36:00Z",
+    "service": "notification-service",
+    "level": "WARN",
+    "message": "Queue depth 6,200 (threshold 5,000) - deliveries delayed",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00037",
+    "timestamp": "2026-09-30T09:38:00Z",
+    "service": "notification-service",
+    "level": "WARN",
+    "message": "Queue depth 12,400 - deliveries delayed by ~9m",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00038",
+    "timestamp": "2026-09-30T09:40:01Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Health check OK; 574 req/s over last 60s",
+    "source": "orders-api-pod"
+  },
+  {
+    "log_id": "log-00039",
+    "timestamp": "2026-09-30T09:40:06Z",
+    "service": "users-api",
+    "level": "INFO",
+    "message": "Health check OK; 344 req/s over last 60s",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00040",
+    "timestamp": "2026-09-30T09:40:08Z",
+    "service": "inventory-api",
+    "level": "INFO",
+    "message": "Health check OK; 271 req/s over last 60s",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00041",
+    "timestamp": "2026-09-30T09:40:09Z",
+    "service": "api-gateway",
+    "level": "INFO",
+    "message": "Health check OK; 603 req/s over last 60s",
+    "source": "api-gateway-pod"
+  },
+  {
+    "log_id": "log-00042",
+    "timestamp": "2026-09-30T09:40:11Z",
+    "service": "auth-service",
+    "level": "INFO",
+    "message": "Health check OK; 645 req/s over last 60s",
+    "source": "auth-service-pod"
+  },
+  {
+    "log_id": "log-00043",
+    "timestamp": "2026-09-30T09:40:12Z",
+    "service": "payments-api",
+    "level": "WARN",
+    "message": "Connection pool utilization 85% (170/200) pool=payments-db",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00044",
+    "timestamp": "2026-09-30T09:40:12Z",
+    "service": "postgres-db",
+    "level": "INFO",
+    "message": "checkpoint complete; 8 wal segments recycled",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00045",
+    "timestamp": "2026-09-30T09:40:26Z",
+    "service": "search-api",
+    "level": "INFO",
+    "message": "Health check OK; 807 req/s over last 60s",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00046",
+    "timestamp": "2026-09-30T09:40:28Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "Health check OK; 686 req/s over last 60s",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00047",
+    "timestamp": "2026-09-30T09:40:30Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "email-provider accepting requests again; resuming full send rate",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00048",
+    "timestamp": "2026-09-30T09:40:45Z",
+    "service": "redis-cache",
+    "level": "INFO",
+    "message": "DB saved on disk; 404k keys",
+    "source": "redis-cache-0"
+  },
+  {
+    "log_id": "log-00049",
+    "timestamp": "2026-09-30T09:40:46Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Health check OK; 793 req/s over last 60s",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00050",
+    "timestamp": "2026-09-30T09:43:05Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "Backlog drained; queue depth 0; delivery latency back to 1.8s",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00051",
+    "timestamp": "2026-09-30T09:44:08Z",
+    "service": "payments-api",
+    "level": "WARN",
+    "message": "ProviderRetryWrapper: attempt 2/3 for txn_7f31 after timeout (DB connection held during retry)",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00052",
+    "timestamp": "2026-09-30T09:45:06Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Health check OK; 382 req/s over last 60s",
+    "source": "orders-api-pod"
+  },
+  {
+    "log_id": "log-00053",
+    "timestamp": "2026-09-30T09:45:07Z",
+    "service": "postgres-db",
+    "level": "INFO",
+    "message": "checkpoint complete; 5 wal segments recycled",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00054",
+    "timestamp": "2026-09-30T09:45:10Z",
+    "service": "auth-service",
+    "level": "INFO",
+    "message": "Health check OK; 418 req/s over last 60s",
+    "source": "auth-service-pod"
+  },
+  {
+    "log_id": "log-00055",
+    "timestamp": "2026-09-30T09:45:14Z",
+    "service": "users-api",
+    "level": "INFO",
+    "message": "Health check OK; 602 req/s over last 60s",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00056",
+    "timestamp": "2026-09-30T09:45:20Z",
+    "service": "inventory-api",
+    "level": "INFO",
+    "message": "Health check OK; 942 req/s over last 60s",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00057",
+    "timestamp": "2026-09-30T09:45:24Z",
+    "service": "api-gateway",
+    "level": "INFO",
+    "message": "Health check OK; 508 req/s over last 60s",
+    "source": "api-gateway-pod"
+  },
+  {
+    "log_id": "log-00058",
+    "timestamp": "2026-09-30T09:45:27Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "Health check OK; 478 req/s over last 60s",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00059",
+    "timestamp": "2026-09-30T09:45:28Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Health check OK; 406 req/s over last 60s",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00060",
+    "timestamp": "2026-09-30T09:45:53Z",
+    "service": "search-api",
+    "level": "INFO",
+    "message": "Health check OK; 534 req/s over last 60s",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00061",
+    "timestamp": "2026-09-30T09:45:58Z",
+    "service": "redis-cache",
+    "level": "INFO",
+    "message": "DB saved on disk; 729k keys",
+    "source": "redis-cache-0"
+  },
+  {
+    "log_id": "log-00062",
+    "timestamp": "2026-09-30T09:47:41Z",
+    "service": "payments-api",
+    "level": "WARN",
+    "message": "Connection pool utilization 95% (190/200) pool=payments-db",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00063",
+    "timestamp": "2026-09-30T09:50:00Z",
+    "service": "search-api",
+    "level": "INFO",
+    "message": "Deployment deploy-8497 started (config change: DB_READ_HOST, DB_CONNECT_TIMEOUT_MS)",
+    "source": "arjun.m"
+  },
+  {
+    "log_id": "log-00064",
+    "timestamp": "2026-09-30T09:50:00Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "Health check OK; 801 req/s over last 60s",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00065",
+    "timestamp": "2026-09-30T09:50:04Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Health check OK; 387 req/s over last 60s",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00066",
+    "timestamp": "2026-09-30T09:50:26Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Health check OK; 167 req/s over last 60s",
+    "source": "orders-api-pod"
+  },
+  {
+    "log_id": "log-00067",
+    "timestamp": "2026-09-30T09:50:28Z",
+    "service": "inventory-api",
+    "level": "INFO",
+    "message": "Health check OK; 714 req/s over last 60s",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00068",
+    "timestamp": "2026-09-30T09:50:31Z",
+    "service": "search-api",
+    "level": "INFO",
+    "message": "Health check OK; 251 req/s over last 60s",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00069",
+    "timestamp": "2026-09-30T09:50:35Z",
+    "service": "auth-service",
+    "level": "INFO",
+    "message": "Health check OK; 516 req/s over last 60s",
+    "source": "auth-service-pod"
+  },
+  {
+    "log_id": "log-00070",
+    "timestamp": "2026-09-30T09:50:37Z",
+    "service": "redis-cache",
+    "level": "INFO",
+    "message": "DB saved on disk; 186k keys",
+    "source": "redis-cache-0"
+  },
+  {
+    "log_id": "log-00071",
+    "timestamp": "2026-09-30T09:50:38Z",
+    "service": "api-gateway",
+    "level": "INFO",
+    "message": "Health check OK; 221 req/s over last 60s",
+    "source": "api-gateway-pod"
+  },
+  {
+    "log_id": "log-00072",
+    "timestamp": "2026-09-30T09:50:40Z",
+    "service": "search-api",
+    "level": "INFO",
+    "message": "Pod search-api-6b7c-r1 starting v1.9.3; DB_READ_HOST=pg-replica-old.internal DB_CONNECT_TIMEOUT_MS=10000",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00073",
+    "timestamp": "2026-09-30T09:50:40Z",
+    "service": "redis-cache",
+    "level": "WARN",
+    "message": "used_memory 3.98GB approaching maxmemory 4.00GB; eviction policy noeviction",
+    "source": "redis-cache-0"
+  },
+  {
+    "log_id": "log-00074",
+    "timestamp": "2026-09-30T09:50:42Z",
+    "service": "postgres-db",
+    "level": "INFO",
+    "message": "checkpoint complete; 8 wal segments recycled",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00075",
+    "timestamp": "2026-09-30T09:50:47Z",
+    "service": "users-api",
+    "level": "INFO",
+    "message": "Health check OK; 611 req/s over last 60s",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00076",
+    "timestamp": "2026-09-30T09:51:00Z",
+    "service": "search-api",
+    "level": "INFO",
+    "message": "Deployment deploy-8497 completed: 2/2 pods running v1.9.3",
+    "source": "arjun.m"
+  },
+  {
+    "log_id": "log-00077",
+    "timestamp": "2026-09-30T09:51:02Z",
+    "service": "redis-cache",
+    "level": "ERROR",
+    "message": "OOM command not allowed when used memory > 'maxmemory'",
+    "source": "redis-cache-0"
+  },
+  {
+    "log_id": "log-00078",
+    "timestamp": "2026-09-30T09:51:03Z",
+    "service": "payments-api",
+    "level": "WARN",
+    "message": "Connection pool utilization 100% (200/200) pool=payments-db",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00079",
+    "timestamp": "2026-09-30T09:51:05Z",
+    "service": "redis-cache",
+    "level": "ERROR",
+    "message": "Process terminated: OOMKilled (exit code 137)",
+    "source": "redis-cache-0"
+  },
+  {
+    "log_id": "log-00080",
+    "timestamp": "2026-09-30T09:51:11Z",
+    "service": "search-api",
+    "level": "ERROR",
+    "message": "database connection timeout after 10000ms connecting to pg-replica-old.internal:5432",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00081",
+    "timestamp": "2026-09-30T09:51:12Z",
+    "service": "search-api",
+    "level": "ERROR",
+    "message": "HTTP 500 GET /api/search?q=shoes - DBConnectionTimeout",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00082",
+    "timestamp": "2026-09-30T09:51:20Z",
+    "service": "redis-cache",
+    "level": "ERROR",
+    "message": "Failed to start: Bad file format reading the append only file appendonly.aof: truncated record at offset 4211880960",
+    "source": "redis-cache-0"
+  },
+  {
+    "log_id": "log-00083",
+    "timestamp": "2026-09-30T09:51:25Z",
+    "service": "redis-cache",
+    "level": "ERROR",
+    "message": "Process exited (1); restart backoff 5m",
+    "source": "redis-cache-0"
+  },
+  {
+    "log_id": "log-00084",
+    "timestamp": "2026-09-30T09:51:30Z",
+    "service": "users-api",
+    "level": "ERROR",
+    "message": "Redis connection refused redis-cache.internal:6379",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00085",
+    "timestamp": "2026-09-30T09:52:01Z",
+    "service": "users-api",
+    "level": "ERROR",
+    "message": "HTTP 503 GET /api/users/me - SessionStoreUnavailable",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00086",
+    "timestamp": "2026-09-30T09:52:02Z",
+    "service": "users-api",
+    "level": "WARN",
+    "message": "Falling back to database session lookup (slow path) for 40% of requests",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00087",
+    "timestamp": "2026-09-30T09:52:15Z",
+    "service": "payments-api",
+    "level": "ERROR",
+    "message": "Timed out waiting for connection from pool after 5000ms (pool=payments-db, active=200, idle=0, max=200)",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00088",
+    "timestamp": "2026-09-30T09:52:16Z",
+    "service": "payments-api",
+    "level": "ERROR",
+    "message": "HTTP 504 POST /api/payments/charge - PoolTimeoutError",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00089",
+    "timestamp": "2026-09-30T09:53:40Z",
+    "service": "search-api",
+    "level": "ERROR",
+    "message": "database connection timeout after 10000ms connecting to pg-replica-old.internal:5432",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00090",
+    "timestamp": "2026-09-30T09:55:00Z",
+    "service": "postgres-db",
+    "level": "WARN",
+    "message": "payments_db: connection limit reached for role payments_app (200/200); 158 connections 'idle in transaction'",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00091",
+    "timestamp": "2026-09-30T09:55:00Z",
+    "service": "auth-service",
+    "level": "INFO",
+    "message": "Deployment deploy-8490 started (v3.1.4 -> v3.2.0)",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00092",
+    "timestamp": "2026-09-30T09:55:02Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Health check OK; 909 req/s over last 60s",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00093",
+    "timestamp": "2026-09-30T09:55:03Z",
+    "service": "inventory-api",
+    "level": "INFO",
+    "message": "Health check OK; 966 req/s over last 60s",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00094",
+    "timestamp": "2026-09-30T09:55:05Z",
+    "service": "search-api",
+    "level": "INFO",
+    "message": "Health check OK; 658 req/s over last 60s",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00095",
+    "timestamp": "2026-09-30T09:55:07Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Health check OK; 931 req/s over last 60s",
+    "source": "orders-api-pod"
+  },
+  {
+    "log_id": "log-00096",
+    "timestamp": "2026-09-30T09:55:13Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "Health check OK; 290 req/s over last 60s",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00097",
+    "timestamp": "2026-09-30T09:55:29Z",
+    "service": "auth-service",
+    "level": "INFO",
+    "message": "Health check OK; 317 req/s over last 60s",
+    "source": "auth-service-pod"
+  },
+  {
+    "log_id": "log-00098",
+    "timestamp": "2026-09-30T09:55:30Z",
+    "service": "auth-service",
+    "level": "INFO",
+    "message": "Pod auth-service-5c6b-a1 starting v3.2.0",
+    "source": "auth-service-5c6b-a1"
+  },
+  {
+    "log_id": "log-00099",
+    "timestamp": "2026-09-30T09:55:33Z",
+    "service": "postgres-db",
+    "level": "INFO",
+    "message": "checkpoint complete; 6 wal segments recycled",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00100",
+    "timestamp": "2026-09-30T09:55:35Z",
+    "service": "auth-service",
+    "level": "ERROR",
+    "message": "Startup check failed: required environment variable JWT_SIGNING_KEY_V2 is not set",
+    "source": "auth-service-5c6b-a1"
+  },
+  {
+    "log_id": "log-00101",
+    "timestamp": "2026-09-30T09:55:35Z",
+    "service": "users-api",
+    "level": "INFO",
+    "message": "Health check OK; 674 req/s over last 60s",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00102",
+    "timestamp": "2026-09-30T09:55:36Z",
+    "service": "api-gateway",
+    "level": "INFO",
+    "message": "Health check OK; 472 req/s over last 60s",
+    "source": "api-gateway-pod"
+  },
+  {
+    "log_id": "log-00103",
+    "timestamp": "2026-09-30T09:55:40Z",
+    "service": "auth-service",
+    "level": "WARN",
+    "message": "Readiness probe failed: GET /healthz/ready -> 503 (signing key not loaded)",
+    "source": "auth-service-5c6b-a1"
+  },
+  {
+    "log_id": "log-00104",
+    "timestamp": "2026-09-30T09:56:02Z",
+    "service": "search-api",
+    "level": "WARN",
+    "message": "Circuit breaker 'search-db' half-open; probing",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00105",
+    "timestamp": "2026-09-30T09:56:10Z",
+    "service": "auth-service",
+    "level": "WARN",
+    "message": "Readiness probe failed: GET /healthz/ready -> 503 (signing key not loaded)",
+    "source": "auth-service-5c6b-a1"
+  },
+  {
+    "log_id": "log-00106",
+    "timestamp": "2026-09-30T09:57:05Z",
+    "service": "api-gateway",
+    "level": "WARN",
+    "message": "Upstream latency spike: p95 900ms; request rate 15.0k rps (2.9x baseline); top client: batch-export-job",
+    "source": "api-gateway-pod"
+  },
+  {
+    "log_id": "log-00107",
+    "timestamp": "2026-09-30T09:57:44Z",
+    "service": "users-api",
+    "level": "ERROR",
+    "message": "HTTP 503 GET /api/users/me - SessionStoreUnavailable",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00108",
+    "timestamp": "2026-09-30T09:58:00Z",
+    "service": "api-gateway",
+    "level": "WARN",
+    "message": "Upstream latency spike: p95 1300ms; request rate 15.6k rps; rate_limiting_v2 throttled 1,840 requests from batch-export-job",
+    "source": "api-gateway-pod"
+  },
+  {
+    "log_id": "log-00109",
+    "timestamp": "2026-09-30T09:58:00Z",
+    "service": "inventory-api",
+    "level": "INFO",
+    "message": "Deployment deploy-8501 started (v1.4.9 -> v1.5.0)",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00110",
+    "timestamp": "2026-09-30T09:58:40Z",
+    "service": "auth-service",
+    "level": "WARN",
+    "message": "Readiness probe failed: GET /healthz/ready -> 503 (signing key not loaded)",
+    "source": "auth-service-5c6b-a1"
+  },
+  {
+    "log_id": "log-00111",
+    "timestamp": "2026-09-30T09:58:44Z",
+    "service": "payments-api",
+    "level": "ERROR",
+    "message": "Timed out waiting for connection from pool after 5000ms (pool=payments-db, active=200, idle=0, max=200)",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00112",
+    "timestamp": "2026-09-30T09:59:10Z",
+    "service": "inventory-api",
+    "level": "INFO",
+    "message": "Pod inventory-api-4e2a-s1 starting v1.5.0; feature flag async_stock_sync=true; StockSyncWorker started (batch=500)",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00113",
+    "timestamp": "2026-09-30T10:00:00Z",
+    "service": "inventory-api",
+    "level": "INFO",
+    "message": "Deployment deploy-8501 completed: 3/3 pods running v1.5.0",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00114",
+    "timestamp": "2026-09-30T10:00:00Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Deployment deploy-8472 started (v2.8.0 -> v2.8.1)",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00115",
+    "timestamp": "2026-09-30T10:00:01Z",
+    "service": "search-api",
+    "level": "INFO",
+    "message": "Health check OK; 894 req/s over last 60s",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00116",
+    "timestamp": "2026-09-30T10:00:17Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "Health check OK; 850 req/s over last 60s",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00117",
+    "timestamp": "2026-09-30T10:00:22Z",
+    "service": "inventory-api",
+    "level": "INFO",
+    "message": "Health check OK; 89 req/s over last 60s",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00118",
+    "timestamp": "2026-09-30T10:00:27Z",
+    "service": "api-gateway",
+    "level": "INFO",
+    "message": "Health check OK; 270 req/s over last 60s",
+    "source": "api-gateway-pod"
+  },
+  {
+    "log_id": "log-00119",
+    "timestamp": "2026-09-30T10:00:30Z",
+    "service": "api-gateway",
+    "level": "INFO",
+    "message": "Request rate returning to baseline (9.0k rps)",
+    "source": "api-gateway-pod"
+  },
+  {
+    "log_id": "log-00120",
+    "timestamp": "2026-09-30T10:00:38Z",
+    "service": "postgres-db",
+    "level": "INFO",
+    "message": "checkpoint complete; 7 wal segments recycled",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00121",
+    "timestamp": "2026-09-30T10:00:44Z",
+    "service": "users-api",
+    "level": "INFO",
+    "message": "Health check OK; 669 req/s over last 60s",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00122",
+    "timestamp": "2026-09-30T10:00:45Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Health check OK; 197 req/s over last 60s",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00123",
+    "timestamp": "2026-09-30T10:00:46Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Health check OK; 225 req/s over last 60s",
+    "source": "orders-api-pod"
+  },
+  {
+    "log_id": "log-00124",
+    "timestamp": "2026-09-30T10:00:48Z",
+    "service": "inventory-api",
+    "level": "ERROR",
+    "message": "StockSyncWorker: deadlock detected while updating stock_levels (sku batch 2200-2700); retrying",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00125",
+    "timestamp": "2026-09-30T10:00:51Z",
+    "service": "auth-service",
+    "level": "INFO",
+    "message": "Health check OK; 494 req/s over last 60s",
+    "source": "auth-service-pod"
+  },
+  {
+    "log_id": "log-00126",
+    "timestamp": "2026-09-30T10:01:00Z",
+    "service": "api-gateway",
+    "level": "INFO",
+    "message": "Latency back to baseline: p95 95ms; 5xx rate 0.2%",
+    "source": "api-gateway-pod"
+  },
+  {
+    "log_id": "log-00127",
+    "timestamp": "2026-09-30T10:01:02Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Pod orders-api-7d9f-x1 starting v2.8.1",
+    "source": "orders-api-7d9f-x1"
+  },
+  {
+    "log_id": "log-00128",
+    "timestamp": "2026-09-30T10:01:03Z",
+    "service": "inventory-api",
+    "level": "ERROR",
+    "message": "HTTP 500 PUT /api/inventory/SKU-88213 - DeadlockDetected: could not serialize access due to concurrent update",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00129",
+    "timestamp": "2026-09-30T10:01:05Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Loading database config: DB_HOST=pg-primary.internal DB_PORT=6432 DB_POOL_MODE=transaction",
+    "source": "orders-api-7d9f-x1"
+  },
+  {
+    "log_id": "log-00130",
+    "timestamp": "2026-09-30T10:01:08Z",
+    "service": "orders-api",
+    "level": "ERROR",
+    "message": "Database connection refused: pg-primary.internal:6432 (ECONNREFUSED)",
+    "source": "orders-api-7d9f-x1"
+  },
+  {
+    "log_id": "log-00131",
+    "timestamp": "2026-09-30T10:01:09Z",
+    "service": "orders-api",
+    "level": "ERROR",
+    "message": "Failed to initialize OrderRepository: could not acquire connection",
+    "source": "orders-api-7d9f-x1"
+  },
+  {
+    "log_id": "log-00132",
+    "timestamp": "2026-09-30T10:01:10Z",
+    "service": "orders-api",
+    "level": "WARN",
+    "message": "Readiness degraded: database=unavailable (serving with cached reads only)",
+    "source": "orders-api-7d9f-x1"
+  },
+  {
+    "log_id": "log-00133",
+    "timestamp": "2026-09-30T10:01:19Z",
+    "service": "search-api",
+    "level": "ERROR",
+    "message": "database connection timeout after 10000ms connecting to pg-replica-old.internal:5432",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00134",
+    "timestamp": "2026-09-30T10:02:14Z",
+    "service": "orders-api",
+    "level": "ERROR",
+    "message": "HTTP 500 GET /api/orders/9183 - OrderRepositoryError: connection refused",
+    "source": "orders-api-7d9f-x1"
+  },
+  {
+    "log_id": "log-00135",
+    "timestamp": "2026-09-30T10:02:30Z",
+    "service": "postgres-db",
+    "level": "WARN",
+    "message": "inventory_db: deadlock detected; process 48112 waits for ShareLock on transaction 991203 (table stock_levels)",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00136",
+    "timestamp": "2026-09-30T10:02:40Z",
+    "service": "auth-service",
+    "level": "WARN",
+    "message": "Readiness probe failed: GET /healthz/ready -> 503 (signing key not loaded)",
+    "source": "auth-service-5c6b-a1"
+  },
+  {
+    "log_id": "log-00137",
+    "timestamp": "2026-09-30T10:02:50Z",
+    "service": "orders-api",
+    "level": "ERROR",
+    "message": "HTTP 500 POST /api/orders - OrderRepositoryError: connection refused",
+    "source": "orders-api-7d9f-x2"
+  },
+  {
+    "log_id": "log-00138",
+    "timestamp": "2026-09-30T10:03:21Z",
+    "service": "payments-api",
+    "level": "ERROR",
+    "message": "HTTP 504 POST /api/payments/charge - PoolTimeoutError",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00139",
+    "timestamp": "2026-09-30T10:03:30Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Deployment deploy-8472 completed: 4/4 pods running v2.8.1",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00140",
+    "timestamp": "2026-09-30T10:04:10Z",
+    "service": "users-api",
+    "level": "ERROR",
+    "message": "Redis connection refused redis-cache.internal:6379",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00141",
+    "timestamp": "2026-09-30T10:04:12Z",
+    "service": "orders-api",
+    "level": "ERROR",
+    "message": "Database connection refused: pg-primary.internal:6432 (ECONNREFUSED)",
+    "source": "orders-api-7d9f-x3"
+  },
+  {
+    "log_id": "log-00142",
+    "timestamp": "2026-09-30T10:04:55Z",
+    "service": "inventory-api",
+    "level": "ERROR",
+    "message": "HTTP 500 PUT /api/inventory/SKU-10477 - DeadlockDetected: could not serialize access due to concurrent update",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00143",
+    "timestamp": "2026-09-30T10:05:01Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Health check OK; 949 req/s over last 60s",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00144",
+    "timestamp": "2026-09-30T10:05:14Z",
+    "service": "users-api",
+    "level": "INFO",
+    "message": "Health check OK; 536 req/s over last 60s",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00145",
+    "timestamp": "2026-09-30T10:05:21Z",
+    "service": "orders-api",
+    "level": "ERROR",
+    "message": "HTTP 500 GET /api/orders/9201 - OrderRepositoryError: connection refused",
+    "source": "orders-api-7d9f-x1"
+  },
+  {
+    "log_id": "log-00146",
+    "timestamp": "2026-09-30T10:05:22Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Health check OK; 399 req/s over last 60s",
+    "source": "orders-api-pod"
+  },
+  {
+    "log_id": "log-00147",
+    "timestamp": "2026-09-30T10:05:30Z",
+    "service": "auth-service",
+    "level": "ERROR",
+    "message": "Deployment deploy-8490 progress deadline exceeded (0/3 new pods ready after 10m); rollout paused",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00148",
+    "timestamp": "2026-09-30T10:05:31Z",
+    "service": "api-gateway",
+    "level": "INFO",
+    "message": "Health check OK; 730 req/s over last 60s",
+    "source": "api-gateway-pod"
+  },
+  {
+    "log_id": "log-00149",
+    "timestamp": "2026-09-30T10:05:31Z",
+    "service": "inventory-api",
+    "level": "INFO",
+    "message": "Health check OK; 219 req/s over last 60s",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00150",
+    "timestamp": "2026-09-30T10:05:39Z",
+    "service": "postgres-db",
+    "level": "INFO",
+    "message": "checkpoint complete; 7 wal segments recycled",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00151",
+    "timestamp": "2026-09-30T10:05:40Z",
+    "service": "auth-service",
+    "level": "INFO",
+    "message": "Health check OK; 268 req/s over last 60s",
+    "source": "auth-service-pod"
+  },
+  {
+    "log_id": "log-00152",
+    "timestamp": "2026-09-30T10:05:45Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "Health check OK; 908 req/s over last 60s",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00153",
+    "timestamp": "2026-09-30T10:05:48Z",
+    "service": "search-api",
+    "level": "INFO",
+    "message": "Health check OK; 305 req/s over last 60s",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00154",
+    "timestamp": "2026-09-30T10:06:12Z",
+    "service": "inventory-api",
+    "level": "WARN",
+    "message": "Warehouse client retry storm detected: 3.1x normal PUT volume",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00155",
+    "timestamp": "2026-09-30T10:07:45Z",
+    "service": "search-api",
+    "level": "ERROR",
+    "message": "HTTP 500 GET /api/search?q=jacket - DBConnectionTimeout",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00156",
+    "timestamp": "2026-09-30T10:08:02Z",
+    "service": "orders-api",
+    "level": "WARN",
+    "message": "Readiness flapping: 2/4 pods failing readiness (database=unavailable)",
+    "source": "ci-pipeline"
+  },
+  {
+    "log_id": "log-00157",
+    "timestamp": "2026-09-30T10:09:02Z",
+    "service": "payments-api",
+    "level": "WARN",
+    "message": "ProviderRetryWrapper: attempt 3/3 for txn_8a02 after timeout (DB connection held during retry)",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00158",
+    "timestamp": "2026-09-30T10:10:00Z",
+    "service": "auth-service",
+    "level": "INFO",
+    "message": "Serving traffic from 3/3 pods on v3.1.4; token issuance nominal",
+    "source": "auth-service-7f8d-b2"
+  },
+  {
+    "log_id": "log-00159",
+    "timestamp": "2026-09-30T10:10:11Z",
+    "service": "auth-service",
+    "level": "INFO",
+    "message": "Health check OK; 735 req/s over last 60s",
+    "source": "auth-service-pod"
+  },
+  {
+    "log_id": "log-00160",
+    "timestamp": "2026-09-30T10:10:12Z",
+    "service": "inventory-api",
+    "level": "INFO",
+    "message": "Health check OK; 914 req/s over last 60s",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00161",
+    "timestamp": "2026-09-30T10:10:18Z",
+    "service": "search-api",
+    "level": "INFO",
+    "message": "Health check OK; 113 req/s over last 60s",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00162",
+    "timestamp": "2026-09-30T10:10:21Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Health check OK; 546 req/s over last 60s",
+    "source": "orders-api-pod"
+  },
+  {
+    "log_id": "log-00163",
+    "timestamp": "2026-09-30T10:10:21Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Health check OK; 743 req/s over last 60s",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00164",
+    "timestamp": "2026-09-30T10:10:23Z",
+    "service": "users-api",
+    "level": "INFO",
+    "message": "Health check OK; 480 req/s over last 60s",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00165",
+    "timestamp": "2026-09-30T10:10:34Z",
+    "service": "api-gateway",
+    "level": "INFO",
+    "message": "Health check OK; 790 req/s over last 60s",
+    "source": "api-gateway-pod"
+  },
+  {
+    "log_id": "log-00166",
+    "timestamp": "2026-09-30T10:10:37Z",
+    "service": "postgres-db",
+    "level": "INFO",
+    "message": "checkpoint complete; 2 wal segments recycled",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00167",
+    "timestamp": "2026-09-30T10:10:40Z",
+    "service": "inventory-api",
+    "level": "ERROR",
+    "message": "StockSyncWorker: deadlock detected while updating stock_levels (sku batch 5000-5500); retrying",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00168",
+    "timestamp": "2026-09-30T10:10:50Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "Health check OK; 144 req/s over last 60s",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00169",
+    "timestamp": "2026-09-30T10:11:28Z",
+    "service": "users-api",
+    "level": "ERROR",
+    "message": "HTTP 503 POST /api/users/login - SessionStoreUnavailable",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00170",
+    "timestamp": "2026-09-30T10:11:47Z",
+    "service": "orders-api",
+    "level": "ERROR",
+    "message": "HTTP 500 POST /api/orders - OrderRepositoryError: connection refused",
+    "source": "orders-api-7d9f-x4"
+  },
+  {
+    "log_id": "log-00171",
+    "timestamp": "2026-09-30T10:12:57Z",
+    "service": "payments-api",
+    "level": "ERROR",
+    "message": "Timed out waiting for connection from pool after 5000ms (pool=payments-db, active=200, idle=0, max=200)",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00172",
+    "timestamp": "2026-09-30T10:14:00Z",
+    "service": "postgres-db",
+    "level": "INFO",
+    "message": "pg-primary: orders_db 42 active connections on port 5432; no listener configured on 6432",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00173",
+    "timestamp": "2026-09-30T10:14:03Z",
+    "service": "search-api",
+    "level": "ERROR",
+    "message": "database connection timeout after 10000ms connecting to pg-replica-old.internal:5432",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00174",
+    "timestamp": "2026-09-30T10:15:00Z",
+    "service": "postgres-db",
+    "level": "INFO",
+    "message": "pg-replica-02: 3 active connections, replication lag 40ms, no slow queries",
+    "source": "pg-replica-02"
+  },
+  {
+    "log_id": "log-00175",
+    "timestamp": "2026-09-30T10:15:06Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Health check OK; 773 req/s over last 60s",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00176",
+    "timestamp": "2026-09-30T10:15:07Z",
+    "service": "inventory-api",
+    "level": "ERROR",
+    "message": "HTTP 500 PUT /api/inventory/SKU-33190 - DeadlockDetected: could not serialize access due to concurrent update",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00177",
+    "timestamp": "2026-09-30T10:15:17Z",
+    "service": "search-api",
+    "level": "INFO",
+    "message": "Health check OK; 310 req/s over last 60s",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00178",
+    "timestamp": "2026-09-30T10:15:22Z",
+    "service": "postgres-db",
+    "level": "INFO",
+    "message": "checkpoint complete; 6 wal segments recycled",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00179",
+    "timestamp": "2026-09-30T10:15:24Z",
+    "service": "inventory-api",
+    "level": "INFO",
+    "message": "Health check OK; 655 req/s over last 60s",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00180",
+    "timestamp": "2026-09-30T10:15:29Z",
+    "service": "users-api",
+    "level": "INFO",
+    "message": "Health check OK; 870 req/s over last 60s",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00181",
+    "timestamp": "2026-09-30T10:15:36Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "Health check OK; 184 req/s over last 60s",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00182",
+    "timestamp": "2026-09-30T10:15:42Z",
+    "service": "auth-service",
+    "level": "INFO",
+    "message": "Health check OK; 522 req/s over last 60s",
+    "source": "auth-service-pod"
+  },
+  {
+    "log_id": "log-00183",
+    "timestamp": "2026-09-30T10:15:50Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Health check OK; 291 req/s over last 60s",
+    "source": "orders-api-pod"
+  },
+  {
+    "log_id": "log-00184",
+    "timestamp": "2026-09-30T10:15:58Z",
+    "service": "api-gateway",
+    "level": "INFO",
+    "message": "Health check OK; 740 req/s over last 60s",
+    "source": "api-gateway-pod"
+  },
+  {
+    "log_id": "log-00185",
+    "timestamp": "2026-09-30T10:16:25Z",
+    "service": "redis-cache",
+    "level": "ERROR",
+    "message": "Failed to start: Bad file format reading the append only file appendonly.aof: truncated record at offset 4211880960",
+    "source": "redis-cache-0"
+  },
+  {
+    "log_id": "log-00186",
+    "timestamp": "2026-09-30T10:17:09Z",
+    "service": "orders-api",
+    "level": "ERROR",
+    "message": "HTTP 500 GET /api/orders/9340 - OrderRepositoryError: connection refused",
+    "source": "orders-api-7d9f-x2"
+  },
+  {
+    "log_id": "log-00187",
+    "timestamp": "2026-09-30T10:17:30Z",
+    "service": "postgres-db",
+    "level": "WARN",
+    "message": "payments_db: connection limit reached for role payments_app (200/200); 163 connections 'idle in transaction'",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00188",
+    "timestamp": "2026-09-30T10:20:25Z",
+    "service": "auth-service",
+    "level": "INFO",
+    "message": "Health check OK; 109 req/s over last 60s",
+    "source": "auth-service-pod"
+  },
+  {
+    "log_id": "log-00189",
+    "timestamp": "2026-09-30T10:20:32Z",
+    "service": "inventory-api",
+    "level": "INFO",
+    "message": "Health check OK; 748 req/s over last 60s",
+    "source": "inventory-api-pod"
+  },
+  {
+    "log_id": "log-00190",
+    "timestamp": "2026-09-30T10:20:33Z",
+    "service": "orders-api",
+    "level": "INFO",
+    "message": "Health check OK; 574 req/s over last 60s",
+    "source": "orders-api-pod"
+  },
+  {
+    "log_id": "log-00191",
+    "timestamp": "2026-09-30T10:20:34Z",
+    "service": "search-api",
+    "level": "INFO",
+    "message": "Health check OK; 375 req/s over last 60s",
+    "source": "search-api-pod"
+  },
+  {
+    "log_id": "log-00192",
+    "timestamp": "2026-09-30T10:20:43Z",
+    "service": "users-api",
+    "level": "INFO",
+    "message": "Health check OK; 682 req/s over last 60s",
+    "source": "users-api-pod"
+  },
+  {
+    "log_id": "log-00193",
+    "timestamp": "2026-09-30T10:20:51Z",
+    "service": "payments-api",
+    "level": "INFO",
+    "message": "Health check OK; 248 req/s over last 60s",
+    "source": "payments-api-pod"
+  },
+  {
+    "log_id": "log-00194",
+    "timestamp": "2026-09-30T10:20:51Z",
+    "service": "notification-service",
+    "level": "INFO",
+    "message": "Health check OK; 972 req/s over last 60s",
+    "source": "notification-service-pod"
+  },
+  {
+    "log_id": "log-00195",
+    "timestamp": "2026-09-30T10:20:54Z",
+    "service": "postgres-db",
+    "level": "INFO",
+    "message": "checkpoint complete; 8 wal segments recycled",
+    "source": "pg-primary"
+  },
+  {
+    "log_id": "log-00196",
+    "timestamp": "2026-09-30T10:20:59Z",
+    "service": "api-gateway",
+    "level": "INFO",
+    "message": "Health check OK; 257 req/s over last 60s",
+    "source": "api-gateway-pod"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "alert_id": "ALT-3001",
+    "name": "HighErrorRate",
+    "service": "orders-api",
+    "severity": "critical",
+    "status": "firing",
+    "fired_at": "2026-09-30T10:04:00Z",
+    "resolved_at": null,
+    "incident_id": "INC-001",
+    "summary": "orders-api 5xx error rate 35% > threshold 5% for 2m"
+  },
+  {
+    "alert_id": "ALT-3002",
+    "name": "HighLatencyP95",
+    "service": "payments-api",
+    "severity": "warning",
+    "status": "firing",
+    "fired_at": "2026-09-30T09:53:00Z",
+    "resolved_at": null,
+    "incident_id": "INC-002",
+    "summary": "payments-api p95 latency 1.2s > threshold 800ms for 5m"
+  },
+  {
+    "alert_id": "ALT-3003",
+    "name": "RedisDown",
+    "service": "redis-cache",
+    "severity": "critical",
+    "status": "firing",
+    "fired_at": "2026-09-30T09:52:00Z",
+    "resolved_at": null,
+    "incident_id": "INC-003",
+    "summary": "redis-cache exporter target down for 1m"
+  },
+  {
+    "alert_id": "ALT-3004",
+    "name": "HighErrorRate",
+    "service": "users-api",
+    "severity": "warning",
+    "status": "firing",
+    "fired_at": "2026-09-30T09:55:00Z",
+    "resolved_at": null,
+    "incident_id": "INC-003",
+    "summary": "users-api 5xx error rate 18% > threshold 5% for 2m"
+  },
+  {
+    "alert_id": "ALT-3005",
+    "name": "HighLatencyP95",
+    "service": "api-gateway",
+    "severity": "warning",
+    "status": "resolved",
+    "fired_at": "2026-09-30T09:58:00Z",
+    "resolved_at": "2026-09-30T10:01:00Z",
+    "incident_id": "INC-004",
+    "summary": "api-gateway p95 latency 1.3s > threshold 500ms for 1m"
+  },
+  {
+    "alert_id": "ALT-3006",
+    "name": "DeploymentStuck",
+    "service": "auth-service",
+    "severity": "warning",
+    "status": "firing",
+    "fired_at": "2026-09-30T10:05:30Z",
+    "resolved_at": null,
+    "incident_id": "INC-005",
+    "summary": "deploy-8490 progress deadline exceeded (0/3 ready)"
+  },
+  {
+    "alert_id": "ALT-3007",
+    "name": "HighErrorRate",
+    "service": "inventory-api",
+    "severity": "warning",
+    "status": "firing",
+    "fired_at": "2026-09-30T10:03:00Z",
+    "resolved_at": null,
+    "incident_id": "INC-009",
+    "summary": "inventory-api 5xx error rate 12% > threshold 5% for 2m"
+  },
+  {
+    "alert_id": "ALT-3008",
+    "name": "DatabaseConnectionTimeouts",
+    "service": "search-api",
+    "severity": "critical",
+    "status": "firing",
+    "fired_at": "2026-09-30T09:53:00Z",
+    "resolved_at": null,
+    "incident_id": "INC-010",
+    "summary": "search-api DB connection timeouts > 100/min"
+  },
+  {
+    "alert_id": "ALT-3009",
+    "name": "EmailProviderThrottled",
+    "service": "notification-service",
+    "severity": "info",
+    "status": "resolved",
+    "fired_at": "2026-09-30T09:34:00Z",
+    "resolved_at": "2026-09-30T09:41:00Z",
+    "incident_id": null,
+    "summary": "email-provider returned 429 for 7m; backlog drained"
+  }
+]

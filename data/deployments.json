@@ -1,0 +1,226 @@
+[
+  {
+    "deployment_id": "deploy-8441",
+    "service": "payments-api",
+    "version": "v4.1.7",
+    "previous_version": "v4.1.6",
+    "environment": "production",
+    "deployed_at": "2026-09-28T14:00:00Z",
+    "completed_at": "2026-09-28T14:04:00Z",
+    "status": "successful",
+    "type": "release",
+    "deployed_by": "ci-pipeline",
+    "commit": "a81f2c0",
+    "change_summary": "Minor logging improvements in provider client.",
+    "changes": [
+      "Add structured logging for PaymentProvider responses"
+    ]
+  },
+  {
+    "deployment_id": "deploy-8455",
+    "service": "users-api",
+    "version": "v5.0.2",
+    "previous_version": "v5.0.1",
+    "environment": "production",
+    "deployed_at": "2026-09-29T11:00:00Z",
+    "completed_at": "2026-09-29T11:03:00Z",
+    "status": "successful",
+    "type": "release",
+    "deployed_by": "ci-pipeline",
+    "commit": "c0ffee1",
+    "change_summary": "Profile endpoint pagination fix.",
+    "changes": [
+      "Fix off-by-one in /api/users?page= pagination"
+    ]
+  },
+  {
+    "deployment_id": "deploy-8460",
+    "service": "orders-api",
+    "version": "v2.7.9",
+    "previous_version": "v2.7.8",
+    "environment": "production",
+    "deployed_at": "2026-09-29T08:00:00Z",
+    "completed_at": "2026-09-29T08:03:00Z",
+    "status": "rolled_back",
+    "type": "release",
+    "deployed_by": "ci-pipeline",
+    "commit": "9d1e77b",
+    "change_summary": "Introduce order status enum; caused HTTP 500 on legacy statuses (INC-007).",
+    "changes": [
+      "Replace free-text order status with OrderStatus enum",
+      "Strict validation of status on read path"
+    ],
+    "rolled_back_by": "deploy-8461"
+  },
+  {
+    "deployment_id": "deploy-8461",
+    "service": "orders-api",
+    "version": "v2.7.8",
+    "previous_version": "v2.7.9",
+    "environment": "production",
+    "deployed_at": "2026-09-29T08:35:00Z",
+    "completed_at": "2026-09-29T08:37:00Z",
+    "status": "successful",
+    "type": "rollback",
+    "deployed_by": "sre-oncall (approved by: priya.n)",
+    "commit": "4b2a9f0",
+    "change_summary": "Rollback of deploy-8460 for INC-007.",
+    "changes": [
+      "Revert to v2.7.8"
+    ],
+    "rollback_of": "deploy-8460"
+  },
+  {
+    "deployment_id": "deploy-8465",
+    "service": "orders-api",
+    "version": "v2.8.0",
+    "previous_version": "v2.7.8",
+    "environment": "production",
+    "deployed_at": "2026-09-29T16:00:00Z",
+    "completed_at": "2026-09-29T16:03:00Z",
+    "status": "successful",
+    "type": "release",
+    "deployed_by": "ci-pipeline",
+    "commit": "e3c1a88",
+    "change_summary": "Re-land order status enum with backward-compatible legacy status mapping.",
+    "changes": [
+      "OrderStatus enum with legacy fallback",
+      "Add contract tests for legacy statuses"
+    ]
+  },
+  {
+    "deployment_id": "deploy-8468",
+    "service": "api-gateway",
+    "version": "v1.12.0",
+    "previous_version": "v1.11.4",
+    "environment": "production",
+    "deployed_at": "2026-09-29T18:00:00Z",
+    "completed_at": "2026-09-29T18:06:00Z",
+    "status": "successful",
+    "type": "release",
+    "deployed_by": "ci-pipeline",
+    "commit": "77ab3d2",
+    "change_summary": "Enable rate_limiting_v2 and upgrade envoy base image.",
+    "changes": [
+      "rate_limiting_v2 flag on",
+      "envoy 1.31 base image"
+    ]
+  },
+  {
+    "deployment_id": "deploy-8470",
+    "service": "notification-service",
+    "version": "v2.3.1",
+    "previous_version": "v2.3.0",
+    "environment": "production",
+    "deployed_at": "2026-09-30T07:00:00Z",
+    "completed_at": "2026-09-30T07:02:00Z",
+    "status": "successful",
+    "type": "release",
+    "deployed_by": "ci-pipeline",
+    "commit": "5e5e5e5",
+    "change_summary": "Template rendering cache.",
+    "changes": [
+      "Cache compiled email templates"
+    ]
+  },
+  {
+    "deployment_id": "deploy-8480",
+    "service": "payments-api",
+    "version": "v4.2.0",
+    "previous_version": "v4.1.7",
+    "environment": "production",
+    "deployed_at": "2026-09-30T08:30:00Z",
+    "completed_at": "2026-09-30T08:34:00Z",
+    "status": "successful",
+    "type": "release",
+    "deployed_by": "ci-pipeline",
+    "commit": "b7d44e1",
+    "change_summary": "Add retry wrapper around PaymentProvider client (3 attempts, exponential backoff).",
+    "changes": [
+      "New ProviderRetryWrapper (feature flag provider_retry_wrapper)",
+      "Charge handler acquires DB connection before calling provider",
+      "Bump provider client timeout 2s -> 8s"
+    ]
+  },
+  {
+    "deployment_id": "deploy-8497",
+    "service": "search-api",
+    "version": "v1.9.3",
+    "previous_version": "v1.9.2",
+    "environment": "production",
+    "deployed_at": "2026-09-30T09:50:00Z",
+    "completed_at": "2026-09-30T09:51:00Z",
+    "status": "successful",
+    "type": "config",
+    "deployed_by": "arjun.m",
+    "commit": "config-2219",
+    "change_summary": "Config-only change: point read queries at dedicated replica.",
+    "changes": [
+      "DB_READ_HOST: pg-replica-02.internal -> pg-replica-old.internal",
+      "DB_CONNECT_TIMEOUT_MS: 5000 -> 10000"
+    ]
+  },
+  {
+    "deployment_id": "deploy-8490",
+    "service": "auth-service",
+    "version": "v3.2.0",
+    "previous_version": "v3.1.4",
+    "environment": "production",
+    "deployed_at": "2026-09-30T09:55:00Z",
+    "completed_at": null,
+    "status": "in_progress",
+    "type": "release",
+    "deployed_by": "ci-pipeline",
+    "commit": "f00dbab",
+    "change_summary": "Rotate to v2 JWT signing key; requires JWT_SIGNING_KEY_V2 secret.",
+    "changes": [
+      "Load JWT_SIGNING_KEY_V2 at startup (required)",
+      "Dual-sign tokens during rotation window"
+    ],
+    "rollout": {
+      "updated_replicas": 1,
+      "ready_replicas": 0,
+      "progress_deadline_exceeded": true
+    }
+  },
+  {
+    "deployment_id": "deploy-8501",
+    "service": "inventory-api",
+    "version": "v1.5.0",
+    "previous_version": "v1.4.9",
+    "environment": "production",
+    "deployed_at": "2026-09-30T09:58:00Z",
+    "completed_at": "2026-09-30T10:00:00Z",
+    "status": "successful",
+    "type": "release",
+    "deployed_by": "ci-pipeline",
+    "commit": "0ddba11",
+    "change_summary": "Async stock synchronisation worker (feature flag async_stock_sync).",
+    "changes": [
+      "StockSyncWorker writes stock_levels in background batches",
+      "Enable async_stock_sync flag by default"
+    ],
+    "simulation": {
+      "rollback_error": "Rollback failed: artifact registry.acmecloud.internal/inventory-api:v1.4.9 not found (pruned by image retention policy)"
+    }
+  },
+  {
+    "deployment_id": "deploy-8472",
+    "service": "orders-api",
+    "version": "v2.8.1",
+    "previous_version": "v2.8.0",
+    "environment": "production",
+    "deployed_at": "2026-09-30T10:00:00Z",
+    "completed_at": "2026-09-30T10:03:30Z",
+    "status": "successful",
+    "type": "release",
+    "deployed_by": "ci-pipeline",
+    "commit": "deadb33f",
+    "change_summary": "Migrate OrderRepository to transaction-mode connection pooling via PgBouncer.",
+    "changes": [
+      "DB_POOL_MODE: session -> transaction",
+      "DB_PORT: 5432 -> 6432 (PgBouncer)",
+      "Remove per-request connection warmup"
+    ]
+  }
+]

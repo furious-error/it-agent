@@ -1,0 +1,125 @@
+[
+  {
+    "database_id": "db-orders",
+    "name": "orders-db",
+    "engine": "postgres",
+    "cluster": "postgres-db",
+    "host": "pg-primary.internal",
+    "port": 5432,
+    "status": "healthy",
+    "connections_active": 42,
+    "connections_max": 200,
+    "p95_query_ms": 9,
+    "replication_lag_ms": 0,
+    "disk_used_percent": 61,
+    "last_heartbeat": "2026-09-30T10:19:55Z"
+  },
+  {
+    "database_id": "db-payments",
+    "name": "payments-db",
+    "engine": "postgres",
+    "cluster": "postgres-db",
+    "host": "pg-primary.internal",
+    "port": 5432,
+    "status": "degraded",
+    "connections_active": 200,
+    "connections_max": 200,
+    "p95_query_ms": 12,
+    "replication_lag_ms": 0,
+    "disk_used_percent": 58,
+    "last_heartbeat": "2026-09-30T10:19:55Z",
+    "warnings": [
+      "Connection limit reached for role payments_app (200/200)",
+      "163 connections idle in transaction > 5m"
+    ]
+  },
+  {
+    "database_id": "db-users",
+    "name": "users-db",
+    "engine": "postgres",
+    "cluster": "postgres-db",
+    "host": "pg-primary.internal",
+    "port": 5432,
+    "status": "healthy",
+    "connections_active": 71,
+    "connections_max": 200,
+    "p95_query_ms": 14,
+    "replication_lag_ms": 0,
+    "disk_used_percent": 55,
+    "last_heartbeat": "2026-09-30T10:19:55Z",
+    "warnings": [
+      "Query volume +240% since 09:52 (session lookups falling back from cache)"
+    ]
+  },
+  {
+    "database_id": "db-auth",
+    "name": "auth-db",
+    "engine": "postgres",
+    "cluster": "postgres-db",
+    "host": "pg-primary.internal",
+    "port": 5432,
+    "status": "healthy",
+    "connections_active": 23,
+    "connections_max": 100,
+    "p95_query_ms": 6,
+    "replication_lag_ms": 0,
+    "disk_used_percent": 40,
+    "last_heartbeat": "2026-09-30T10:19:55Z"
+  },
+  {
+    "database_id": "db-inventory",
+    "name": "inventory-db",
+    "engine": "postgres",
+    "cluster": "postgres-db",
+    "host": "pg-primary.internal",
+    "port": 5432,
+    "status": "healthy",
+    "connections_active": 38,
+    "connections_max": 100,
+    "p95_query_ms": 31,
+    "replication_lag_ms": 0,
+    "disk_used_percent": 66,
+    "last_heartbeat": "2026-09-30T10:19:55Z",
+    "warnings": [
+      "14 deadlocks detected on table stock_levels since 10:00"
+    ]
+  },
+  {
+    "database_id": "db-search",
+    "name": "search-db",
+    "engine": "postgres",
+    "cluster": "postgres-db",
+    "host": "pg-replica-02.internal",
+    "port": 5432,
+    "status": "healthy",
+    "connections_active": 3,
+    "connections_max": 100,
+    "p95_query_ms": 7,
+    "replication_lag_ms": 40,
+    "disk_used_percent": 52,
+    "last_heartbeat": "2026-09-30T10:19:55Z",
+    "notes": [
+      "Read replica. Connections dropped from 18 to 3 at 09:51."
+    ]
+  },
+  {
+    "database_id": "db-redis",
+    "name": "redis-cache",
+    "engine": "redis",
+    "cluster": "redis-cache",
+    "host": "redis-cache.internal",
+    "port": 6379,
+    "status": "down",
+    "connections_active": 0,
+    "connections_max": 10000,
+    "p95_query_ms": null,
+    "replication_lag_ms": null,
+    "disk_used_percent": 88,
+    "last_heartbeat": "2026-09-30T09:51:02Z",
+    "warnings": [
+      "No heartbeat since 09:51:02",
+      "Last exit: OOMKilled (137)",
+      "AOF appendonly.aof failed validation on restart attempt"
+    ]
+  }
+]

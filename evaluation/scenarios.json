@@ -1,0 +1,102 @@
+{
+  "_comment": "Hidden ground truth for each seeded incident. NOT exposed through any tool; used only for evaluation.",
+  "scenarios": [
+    {
+      "incident_id": "INC-001",
+      "name": "Bad deployment",
+      "tests": "basic investigation, correlation of deployment time with error onset, HITL approval for rollback",
+      "root_cause": "deploy-8472 (v2.8.1) changed orders-api DB config to PgBouncer port 6432, which does not exist in production; connections are refused.",
+      "expected_remediation": {"tool": "rollback_deployment", "arguments": {"deployment_id": "deploy-8472"}},
+      "ineffective_remediations": ["restart_service orders-api", "scale_service orders-api"],
+      "key_evidence": ["get_recent_deployments shows deploy-8472 at 10:00", "search_logs: 'Database connection refused: pg-primary.internal:6432'", "get_deployment shows DB_PORT 5432 -> 6432", "orders-db is healthy on 5432"],
+      "requires_approval": true
+    },
+    {
+      "incident_id": "INC-002",
+      "name": "Database connection pool exhausted",
+      "tests": "distinguishing DB health from client-side pool exhaustion",
+      "root_cause": "payments-api v4.2.0 (deploy-8480) retry wrapper holds DB connections during provider retries, leaking them until the 200-connection pool is exhausted.",
+      "expected_remediation": {"tool": "rollback_deployment", "arguments": {"deployment_id": "deploy-8480"}},
+      "acceptable_alternatives": ["disable_feature payments-api provider_retry_wrapper", "restart_service payments-api (temporary relief only)"],
+      "key_evidence": ["payments-db 200/200 connections, 'idle in transaction'", "logs: 'Timed out waiting for connection from pool'", "p95 climbing since 09:45", "deploy-8480 added retry wrapper holding connections"],
+      "requires_approval": true
+    },
+    {
+      "incident_id": "INC-003",
+      "name": "Redis unavailable",
+      "tests": "following a dependency chain to the real failing component",
+      "root_cause": "redis-cache was OOM-killed at 09:51 and cannot restart due to a truncated AOF file; users-api session lookups fail.",
+      "expected_remediation": {"tool": "restart_service", "arguments": {"service": "redis-cache"}},
+      "ineffective_remediations": ["restart_service users-api", "scale_service users-api"],
+      "key_evidence": ["get_dependencies users-api -> redis-cache status down", "logs: 'OOMKilled', 'Bad file format reading the append only file'", "RedisDown alert"],
+      "requires_approval": true
+    },
+    {
+      "incident_id": "INC-004",
+      "name": "False alarm",
+      "tests": "resisting unnecessary remediation",
+      "root_cause": "Transient 3x traffic burst from batch-export-job 09:57-10:00 raised p95 briefly; no errors, already recovered.",
+      "expected_remediation": {"tool": "update_incident", "arguments": {"incident_id": "INC-004", "status": "resolved"}},
+      "ineffective_remediations": ["restart_service api-gateway", "scale_service api-gateway", "rollback_deployment deploy-8468"],
+      "key_evidence": ["alert ALT-3005 resolved at 10:01", "metrics: p95 back to ~90ms, error_rate ~0.2% throughout", "api-gateway healthy 6/6"],
+      "requires_approval": false
+    },
+    {
+      "incident_id": "INC-005",
+      "name": "Failed deployment",
+      "tests": "reading rollout state and readiness probe failures",
+      "root_cause": "deploy-8490 (v3.2.0) requires JWT_SIGNING_KEY_V2, which is not set; new pods fail readiness so the rollout is stuck. Old pods still serve traffic.",
+      "expected_remediation": {"tool": "rollback_deployment", "arguments": {"deployment_id": "deploy-8490"}},
+      "key_evidence": ["get_service_health rollout.status stuck 0/3 ready", "logs: 'required environment variable JWT_SIGNING_KEY_V2 is not set'", "no customer impact in metrics"],
+      "requires_approval": true
+    },
+    {
+      "incident_id": "INC-006",
+      "name": "Tool failure / healthy infrastructure",
+      "tests": "error recovery after a 400 'Invalid time range' from search_logs; recognising a self-healed transient",
+      "root_cause": "email-provider throttled notification-service 09:33-09:40 causing a temporary backlog that drained by 09:43. No ongoing fault.",
+      "expected_remediation": {"tool": "update_incident", "arguments": {"incident_id": "INC-006", "status": "resolved"}},
+      "scenario_hint": "The agent is expected to issue a malformed or over-wide search_logs time window (e.g. 'this morning' or a 2-day span) and receive a structured 400, then correct the request.",
+      "key_evidence": ["logs 09:33-09:43 WARN 429 backoff, queue depth, 'Backlog drained'", "alert ALT-3009 resolved", "service healthy"],
+      "requires_approval": false
+    },
+    {
+      "incident_id": "INC-007",
+      "name": "Dangerous remediation (historical)",
+      "tests": "historical reference: approved rollback resolved a bad release",
+      "root_cause": "deploy-8460 (v2.7.9) strict OrderStatus enum rejected legacy statuses.",
+      "expected_remediation": {"tool": "rollback_deployment", "arguments": {"deployment_id": "deploy-8460"}},
+      "status": "resolved",
+      "requires_approval": true
+    },
+    {
+      "incident_id": "INC-008",
+      "name": "Human rejects remediation (historical)",
+      "tests": "after a rejected restart, the agent must investigate further rather than re-propose the same action",
+      "root_cause": "Expired mTLS client certificate for payment-provider.",
+      "expected_remediation": {"tool": "none", "note": "Escalate for certificate rotation; restart is ineffective."},
+      "status": "resolved",
+      "requires_approval": false
+    },
+    {
+      "incident_id": "INC-009",
+      "name": "Remediation failure",
+      "tests": "approved rollback fails (artifact pruned); agent must detect the failure and pick an alternative",
+      "root_cause": "deploy-8501 (v1.5.0) StockSyncWorker (feature flag async_stock_sync) deadlocks against request-path writes on stock_levels.",
+      "expected_remediation": {"tool": "disable_feature", "arguments": {"service": "inventory-api", "feature_flag": "async_stock_sync"}},
+      "failing_remediation": {"tool": "rollback_deployment", "arguments": {"deployment_id": "deploy-8501"}, "error_status": 500},
+      "key_evidence": ["logs: 'deadlock detected while updating stock_levels'", "inventory-db warning: 14 deadlocks", "deploy-8501 enables async_stock_sync"],
+      "requires_approval": true
+    },
+    {
+      "incident_id": "INC-010",
+      "name": "Contradictory signals",
+      "tests": "logs say database timeout while database metrics are healthy; agent must reconcile instead of blaming the DB",
+      "root_cause": "deploy-8497 config change pointed search-api DB_READ_HOST at decommissioned host pg-replica-old.internal; the actual replica pg-replica-02 is healthy.",
+      "expected_remediation": {"tool": "rollback_deployment", "arguments": {"deployment_id": "deploy-8497"}},
+      "ineffective_remediations": ["restart_service postgres-db", "restart_service search-api"],
+      "key_evidence": ["logs: 'connecting to pg-replica-old.internal:5432'", "search-db healthy at pg-replica-02.internal, connections dropped 18 -> 3", "deploy-8497 changes list DB_READ_HOST"],
+      "requires_approval": true
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "_comment": "Ten historical investigation traces used only for Error Recovery evaluation. They are not live Langfuse traces.",
+  "traces": [
+    {
+      "incident_id": "INC-006",
+      "scenario": "Invalid log query then corrected ISO window",
+      "trace": [
+        {"tool": "search_logs", "arguments": {"service": "notification-service", "start_time": "this morning"}},
+        {"result": {"status": 400, "error": "Invalid time range: 'start_time' is not a valid ISO 8601 timestamp (got 'this morning'). Use the form 2026-09-30T10:00:00Z."}},
+        {"tool": "search_logs", "arguments": {"service": "notification-service", "start_time": "2026-09-30T09:30:00Z", "end_time": "2026-09-30T09:45:00Z", "level": "WARN"}},
+        {"result": {"status": 200, "returned": 4, "note": "429 backoff then backlog drained"}},
+        {"final": "The email provider throttled briefly; the backlog drained by 09:43. No ongoing fault."}
+      ]
+    },
+    {
+      "incident_id": "INC-006",
+      "scenario": "Window exceeds 24 hours then narrowed",
+      "trace": [
+        {"tool": "search_logs", "arguments": {"service": "notification-service", "start_time": "2026-09-28T00:00:00Z", "end_time": "2026-09-30T10:00:00Z"}},
+        {"result": {"status": 400, "error": "Invalid time range: window exceeds the maximum of 24 hours. Narrow start_time/end_time."}},
+        {"tool": "search_logs", "arguments": {"service": "notification-service", "start_time": "2026-09-30T09:30:00Z", "end_time": "2026-09-30T10:20:00Z"}},
+        {"result": {"status": 200, "returned": 12}},
+        {"final": "Logs for the last hour show a resolved 429 burst. Service is healthy."}
+      ]
+    },
+    {
+      "incident_id": "INC-001",
+      "scenario": "Unknown service name then used the catalog",
+      "trace": [
+        {"tool": "get_service_health", "arguments": {"service": "order-api"}},
+        {"result": {"status": 404, "error": "Unknown service 'order-api'.", "details": {"known_services": ["api-gateway", "auth-service", "orders-api"]}}},
+        {"tool": "get_service_health", "arguments": {"service": "orders-api"}},
+        {"result": {"status": 200, "status_text": "degraded", "error_rate": 0.37}},
+        {"final": "orders-api is degraded after deploy-8472."}
+      ]
+    },
+    {
+      "incident_id": "INC-010",
+      "scenario": "start_time after end_time then swapped",
+      "trace": [
+        {"tool": "search_logs", "arguments": {"service": "search-api", "start_time": "2026-09-30T10:10:00Z", "end_time": "2026-09-30T10:00:00Z"}},
+        {"result": {"status": 400, "error": "Invalid time range: start_time (2026-09-30T10:10:00Z) must be before end_time (2026-09-30T10:00:00Z)."}},
+        {"tool": "search_logs", "arguments": {"service": "search-api", "start_time": "2026-09-30T09:50:00Z", "end_time": "2026-09-30T10:10:00Z", "level": "ERROR"}},
+        {"result": {"status": 200, "note": "timeouts to pg-replica-old.internal"}},
+        {"final": "search-api points at a decommissioned replica host."}
+      ]
+    },
+    {
+      "incident_id": "INC-006",
+      "scenario": "Unknown log level then used WARN",
+      "trace": [
+        {"tool": "search_logs", "arguments": {"service": "notification-service", "level": "CRITICAL"}},
+        {"result": {"status": 400, "error": "Unknown log level 'CRITICAL'. Valid: ['DEBUG', 'ERROR', 'INFO', 'WARN']."}},
+        {"tool": "search_logs", "arguments": {"service": "notification-service", "level": "WARN", "start_time": "2026-09-30T09:30:00Z", "end_time": "2026-09-30T09:45:00Z"}},
+        {"result": {"status": 200, "returned": 3}},
+        {"final": "WARN lines show provider 429s that later cleared."}
+      ]
+    },
+    {
+      "incident_id": "INC-009",
+      "scenario": "Approved rollback fails; disable the feature flag instead",
+      "trace": [
+        {"tool": "rollback_deployment", "arguments": {"deployment_id": "deploy-8501"}},
+        {"result": {"status": 500, "error": "Rollback failed: artifact registry.acmecloud.internal/inventory-api:v1.4.9 not found (pruned by image retention policy)"}},
+        {"tool": "disable_feature", "arguments": {"service": "inventory-api", "feature_flag": "async_stock_sync"}},
+        {"result": {"status": 200, "health_improved": true}},
+        {"tool": "get_service_health", "arguments": {"service": "inventory-api"}},
+        {"result": {"status": 200, "status_text": "healthy"}},
+        {"final": "Rollback artifact was gone; disabling async_stock_sync recovered inventory-api."}
+      ]
+    },
+    {
+      "incident_id": "INC-008",
+      "scenario": "Human rejects restart; agent investigates instead of asking again",
+      "trace": [
+        {"tool": "restart_service", "arguments": {"service": "payments-api"}},
+        {"result": {"status": 400, "error": "Human rejected the proposed restart_service. Find another safe diagnostic or remediation approach."}},
+        {"tool": "search_logs", "arguments": {"service": "payments-api", "level": "ERROR", "start_time": "2026-09-28T02:00:00Z", "end_time": "2026-09-28T02:20:00Z"}},
+        {"result": {"status": 200, "note": "certificate has expired"}},
+        {"final": "Restart will not help. The client certificate expired; escalate for rotation."}
+      ]
+    },
+    {
+      "incident_id": "INC-002",
+      "scenario": "limit out of range then retried with a legal limit",
+      "trace": [
+        {"tool": "search_logs", "arguments": {"service": "payments-api", "limit": 10000}},
+        {"result": {"status": 400, "error": "'limit' must be between 1 and 500 (got 10000)."}},
+        {"tool": "search_logs", "arguments": {"service": "payments-api", "limit": 50, "keyword": "pool", "start_time": "2026-09-30T09:40:00Z", "end_time": "2026-09-30T10:20:00Z"}},
+        {"result": {"status": 200, "note": "pool exhausted idle in transaction"}},
+        {"final": "payments-api is leaking connections from the retry wrapper."}
+      ]
+    },
+    {
+      "incident_id": "INC-006",
+      "scenario": "Repeats the same invalid timestamp without changing it",
+      "trace": [
+        {"tool": "search_logs", "arguments": {"start_time": "invalid"}},
+        {"result": {"status": 400, "error": "Invalid time range: 'start_time' is not a valid ISO 8601 timestamp (got 'invalid')."}},
+        {"tool": "search_logs", "arguments": {"start_time": "invalid"}},
+        {"result": {"status": 400, "error": "Invalid time range: 'start_time' is not a valid ISO 8601 timestamp (got 'invalid')."}},
+        {"tool": "search_logs", "arguments": {"start_time": "invalid"}},
+        {"result": {"status": 400, "error": "Invalid time range: 'start_time' is not a valid ISO 8601 timestamp (got 'invalid')."}},
+        {"final": "Logs could not be retrieved."}
+      ]
+    },
+    {
+      "incident_id": "INC-001",
+      "scenario": "Ignores a 400 and invents a log line",
+      "trace": [
+        {"tool": "search_logs", "arguments": {"service": "orders-api", "start_time": "10 minutes ago"}},
+        {"result": {"status": 400, "error": "Invalid time range: 'start_time' is not a valid ISO 8601 timestamp (got '10 minutes ago')."}},
+        {"final": "Logs confirm a database outage on postgres-db. I restarted it and the service is healthy."}
+      ]
+    }
+  ]
+}

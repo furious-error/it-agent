@@ -1,0 +1,295 @@
+[
+  {
+    "service_id": "svc-users",
+    "name": "users-api",
+    "environment": "production",
+    "version": "v5.0.2",
+    "status": "degraded",
+    "replicas": 3,
+    "healthy_replicas": 3,
+    "owner_team": "identity",
+    "runtime": "kubernetes/acme-prod",
+    "feature_flags": {
+      "session_cache": true
+    },
+    "simulation": {
+      "baseline": {
+        "cpu_percent": 45,
+        "memory_percent": 55,
+        "request_rate": 900,
+        "error_rate": 0.004,
+        "p95_latency_ms": 120
+      },
+      "blocked_by": "redis-cache",
+      "remediations": {
+        "restart_service": false,
+        "rollback_deployment": null,
+        "disable_feature": null
+      }
+    }
+  },
+  {
+    "service_id": "svc-orders",
+    "name": "orders-api",
+    "environment": "production",
+    "version": "v2.8.1",
+    "status": "degraded",
+    "replicas": 4,
+    "healthy_replicas": 2,
+    "owner_team": "commerce",
+    "runtime": "kubernetes/acme-prod",
+    "feature_flags": {
+      "new_checkout_flow": false
+    },
+    "simulation": {
+      "baseline": {
+        "cpu_percent": 48,
+        "memory_percent": 60,
+        "request_rate": 1200,
+        "error_rate": 0.01,
+        "p95_latency_ms": 180
+      },
+      "blocked_by": null,
+      "remediations": {
+        "restart_service": false,
+        "rollback_deployment": "deploy-8472",
+        "disable_feature": null
+      }
+    }
+  },
+  {
+    "service_id": "svc-payments",
+    "name": "payments-api",
+    "environment": "production",
+    "version": "v4.2.0",
+    "status": "degraded",
+    "replicas": 3,
+    "healthy_replicas": 3,
+    "owner_team": "payments",
+    "runtime": "kubernetes/acme-prod",
+    "feature_flags": {
+      "provider_retry_wrapper": true
+    },
+    "simulation": {
+      "baseline": {
+        "cpu_percent": 40,
+        "memory_percent": 58,
+        "request_rate": 350,
+        "error_rate": 0.005,
+        "p95_latency_ms": 250
+      },
+      "blocked_by": null,
+      "remediations": {
+        "restart_service": true,
+        "rollback_deployment": "deploy-8480",
+        "disable_feature": "provider_retry_wrapper"
+      }
+    }
+  },
+  {
+    "service_id": "svc-auth",
+    "name": "auth-service",
+    "environment": "production",
+    "version": "v3.1.4",
+    "status": "deploying",
+    "replicas": 3,
+    "healthy_replicas": 3,
+    "owner_team": "identity",
+    "runtime": "kubernetes/acme-prod",
+    "feature_flags": {},
+    "rollout": {
+      "deployment_id": "deploy-8490",
+      "target_version": "v3.2.0",
+      "updated_replicas": 1,
+      "ready_replicas": 0,
+      "status": "stuck",
+      "message": "Progress deadline exceeded: 0/3 new pods ready after 10m"
+    },
+    "simulation": {
+      "baseline": {
+        "cpu_percent": 35,
+        "memory_percent": 50,
+        "request_rate": 1500,
+        "error_rate": 0.002,
+        "p95_latency_ms": 60
+      },
+      "blocked_by": null,
+      "remediations": {
+        "restart_service": false,
+        "rollback_deployment": "deploy-8490",
+        "disable_feature": null
+      }
+    }
+  },
+  {
+    "service_id": "svc-notification",
+    "name": "notification-service",
+    "environment": "production",
+    "version": "v2.3.1",
+    "status": "healthy",
+    "replicas": 2,
+    "healthy_replicas": 2,
+    "owner_team": "platform",
+    "runtime": "kubernetes/acme-prod",
+    "feature_flags": {
+      "sms_channel": true
+    },
+    "simulation": {
+      "baseline": {
+        "cpu_percent": 30,
+        "memory_percent": 45,
+        "request_rate": 200,
+        "error_rate": 0.003,
+        "p95_latency_ms": 90
+      },
+      "blocked_by": null,
+      "remediations": {
+        "restart_service": false,
+        "rollback_deployment": null,
+        "disable_feature": null
+      }
+    }
+  },
+  {
+    "service_id": "svc-postgres",
+    "name": "postgres-db",
+    "environment": "production",
+    "version": "15.6",
+    "status": "healthy",
+    "replicas": 3,
+    "healthy_replicas": 3,
+    "owner_team": "data-platform",
+    "runtime": "vm/acme-prod-db",
+    "feature_flags": {},
+    "simulation": {
+      "baseline": {
+        "cpu_percent": 38,
+        "memory_percent": 72,
+        "request_rate": 4200,
+        "error_rate": 0.0,
+        "p95_latency_ms": 8
+      },
+      "blocked_by": null,
+      "remediations": {
+        "restart_service": false,
+        "rollback_deployment": null,
+        "disable_feature": null
+      }
+    }
+  },
+  {
+    "service_id": "svc-redis",
+    "name": "redis-cache",
+    "environment": "production",
+    "version": "7.2.4",
+    "status": "down",
+    "replicas": 1,
+    "healthy_replicas": 0,
+    "owner_team": "data-platform",
+    "runtime": "vm/acme-prod-cache",
+    "feature_flags": {},
+    "simulation": {
+      "baseline": {
+        "cpu_percent": 25,
+        "memory_percent": 70,
+        "request_rate": 8000,
+        "error_rate": 0.0,
+        "p95_latency_ms": 1
+      },
+      "blocked_by": null,
+      "remediations": {
+        "restart_service": true,
+        "rollback_deployment": null,
+        "disable_feature": null
+      }
+    }
+  },
+  {
+    "service_id": "svc-gateway",
+    "name": "api-gateway",
+    "environment": "production",
+    "version": "v1.12.0",
+    "status": "healthy",
+    "replicas": 6,
+    "healthy_replicas": 6,
+    "owner_team": "platform",
+    "runtime": "kubernetes/acme-prod",
+    "feature_flags": {
+      "rate_limiting_v2": true
+    },
+    "simulation": {
+      "baseline": {
+        "cpu_percent": 50,
+        "memory_percent": 48,
+        "request_rate": 5200,
+        "error_rate": 0.002,
+        "p95_latency_ms": 90
+      },
+      "blocked_by": null,
+      "remediations": {
+        "restart_service": false,
+        "rollback_deployment": null,
+        "disable_feature": null
+      }
+    }
+  },
+  {
+    "service_id": "svc-inventory",
+    "name": "inventory-api",
+    "environment": "production",
+    "version": "v1.5.0",
+    "status": "degraded",
+    "replicas": 3,
+    "healthy_replicas": 3,
+    "owner_team": "commerce",
+    "runtime": "kubernetes/acme-prod",
+    "feature_flags": {
+      "async_stock_sync": true,
+      "bulk_import": false
+    },
+    "simulation": {
+      "baseline": {
+        "cpu_percent": 42,
+        "memory_percent": 52,
+        "request_rate": 300,
+        "error_rate": 0.005,
+        "p95_latency_ms": 140
+      },
+      "blocked_by": null,
+      "remediations": {
+        "restart_service": false,
+        "rollback_deployment": "deploy-8501",
+        "disable_feature": "async_stock_sync"
+      }
+    }
+  },
+  {
+    "service_id": "svc-search",
+    "name": "search-api",
+    "environment": "production",
+    "version": "v1.9.3",
+    "status": "degraded",
+    "replicas": 2,
+    "healthy_replicas": 2,
+    "owner_team": "discovery",
+    "runtime": "kubernetes/acme-prod",
+    "feature_flags": {
+      "semantic_ranking": false
+    },
+    "simulation": {
+      "baseline": {
+        "cpu_percent": 38,
+        "memory_percent": 50,
+        "request_rate": 600,
+        "error_rate": 0.003,
+        "p95_latency_ms": 110
+      },
+      "blocked_by": null,
+      "remediations": {
+        "restart_service": false,
+        "rollback_deployment": "deploy-8497",
+        "disable_feature": null
+      }
+    }
+  }
+]

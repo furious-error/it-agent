@@ -1,0 +1,4322 @@
+[
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:30:00Z",
+    "cpu_percent": 49.2,
+    "memory_percent": 49.0,
+    "request_rate": 5314,
+    "error_rate": 0.002,
+    "p95_latency_ms": 93
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:30:00Z",
+    "cpu_percent": 36.2,
+    "memory_percent": 49.9,
+    "request_rate": 1530,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 63
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:30:00Z",
+    "cpu_percent": 43.4,
+    "memory_percent": 51.1,
+    "request_rate": 302,
+    "error_rate": 0.005,
+    "p95_latency_ms": 144
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:30:00Z",
+    "cpu_percent": 29.3,
+    "memory_percent": 44.5,
+    "request_rate": 207,
+    "error_rate": 0.0029,
+    "p95_latency_ms": 86
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:30:00Z",
+    "cpu_percent": 49.9,
+    "memory_percent": 59.0,
+    "request_rate": 1166,
+    "error_rate": 0.0096,
+    "p95_latency_ms": 189
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:30:00Z",
+    "cpu_percent": 39.1,
+    "memory_percent": 57.6,
+    "request_rate": 359,
+    "error_rate": 0.0049,
+    "p95_latency_ms": 258
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:30:00Z",
+    "cpu_percent": 37.7,
+    "memory_percent": 71.5,
+    "request_rate": 4241,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:30:00Z",
+    "cpu_percent": 25.6,
+    "memory_percent": 85.2,
+    "request_rate": 7857,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:30:00Z",
+    "cpu_percent": 37.6,
+    "memory_percent": 49.8,
+    "request_rate": 604,
+    "error_rate": 0.0029,
+    "p95_latency_ms": 105
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:30:00Z",
+    "cpu_percent": 45.5,
+    "memory_percent": 54.0,
+    "request_rate": 880,
+    "error_rate": 0.0038,
+    "p95_latency_ms": 123
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:31:00Z",
+    "cpu_percent": 51.3,
+    "memory_percent": 47.2,
+    "request_rate": 5446,
+    "error_rate": 0.002,
+    "p95_latency_ms": 89
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:31:00Z",
+    "cpu_percent": 35.3,
+    "memory_percent": 49.5,
+    "request_rate": 1449,
+    "error_rate": 0.002,
+    "p95_latency_ms": 60
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:31:00Z",
+    "cpu_percent": 43.5,
+    "memory_percent": 52.9,
+    "request_rate": 290,
+    "error_rate": 0.0053,
+    "p95_latency_ms": 135
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:31:00Z",
+    "cpu_percent": 31.0,
+    "memory_percent": 44.1,
+    "request_rate": 207,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 86
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:31:00Z",
+    "cpu_percent": 49.5,
+    "memory_percent": 60.9,
+    "request_rate": 1184,
+    "error_rate": 0.0095,
+    "p95_latency_ms": 187
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:31:00Z",
+    "cpu_percent": 41.1,
+    "memory_percent": 57.4,
+    "request_rate": 335,
+    "error_rate": 0.0046,
+    "p95_latency_ms": 251
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:31:00Z",
+    "cpu_percent": 38.4,
+    "memory_percent": 70.7,
+    "request_rate": 4030,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:31:00Z",
+    "cpu_percent": 25.3,
+    "memory_percent": 85.0,
+    "request_rate": 8082,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:31:00Z",
+    "cpu_percent": 37.3,
+    "memory_percent": 50.9,
+    "request_rate": 605,
+    "error_rate": 0.003,
+    "p95_latency_ms": 105
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:31:00Z",
+    "cpu_percent": 45.6,
+    "memory_percent": 55.9,
+    "request_rate": 863,
+    "error_rate": 0.004,
+    "p95_latency_ms": 113
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:32:00Z",
+    "cpu_percent": 50.7,
+    "memory_percent": 47.7,
+    "request_rate": 5397,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 92
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:32:00Z",
+    "cpu_percent": 33.9,
+    "memory_percent": 51.0,
+    "request_rate": 1562,
+    "error_rate": 0.002,
+    "p95_latency_ms": 57
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:32:00Z",
+    "cpu_percent": 43.4,
+    "memory_percent": 53.0,
+    "request_rate": 297,
+    "error_rate": 0.005,
+    "p95_latency_ms": 147
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:32:00Z",
+    "cpu_percent": 29.4,
+    "memory_percent": 44.4,
+    "request_rate": 203,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 85
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:32:00Z",
+    "cpu_percent": 48.8,
+    "memory_percent": 60.3,
+    "request_rate": 1258,
+    "error_rate": 0.0102,
+    "p95_latency_ms": 169
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:32:00Z",
+    "cpu_percent": 41.6,
+    "memory_percent": 57.7,
+    "request_rate": 355,
+    "error_rate": 0.0052,
+    "p95_latency_ms": 255
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:32:00Z",
+    "cpu_percent": 37.3,
+    "memory_percent": 72.6,
+    "request_rate": 4266,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:32:00Z",
+    "cpu_percent": 25.4,
+    "memory_percent": 85.9,
+    "request_rate": 7634,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:32:00Z",
+    "cpu_percent": 37.5,
+    "memory_percent": 49.8,
+    "request_rate": 620,
+    "error_rate": 0.003,
+    "p95_latency_ms": 112
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:32:00Z",
+    "cpu_percent": 44.0,
+    "memory_percent": 55.0,
+    "request_rate": 857,
+    "error_rate": 0.0038,
+    "p95_latency_ms": 122
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:33:00Z",
+    "cpu_percent": 48.7,
+    "memory_percent": 48.9,
+    "request_rate": 5165,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 85
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:33:00Z",
+    "cpu_percent": 35.9,
+    "memory_percent": 50.0,
+    "request_rate": 1532,
+    "error_rate": 0.002,
+    "p95_latency_ms": 58
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:33:00Z",
+    "cpu_percent": 43.6,
+    "memory_percent": 52.9,
+    "request_rate": 311,
+    "error_rate": 0.0046,
+    "p95_latency_ms": 141
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:33:00Z",
+    "cpu_percent": 30.7,
+    "memory_percent": 44.5,
+    "request_rate": 39,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 379
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:33:00Z",
+    "cpu_percent": 49.2,
+    "memory_percent": 59.5,
+    "request_rate": 1220,
+    "error_rate": 0.0107,
+    "p95_latency_ms": 172
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:33:00Z",
+    "cpu_percent": 40.8,
+    "memory_percent": 59.0,
+    "request_rate": 339,
+    "error_rate": 0.0046,
+    "p95_latency_ms": 240
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:33:00Z",
+    "cpu_percent": 39.1,
+    "memory_percent": 71.5,
+    "request_rate": 4235,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:33:00Z",
+    "cpu_percent": 24.7,
+    "memory_percent": 88.8,
+    "request_rate": 7820,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:33:00Z",
+    "cpu_percent": 38.6,
+    "memory_percent": 49.5,
+    "request_rate": 619,
+    "error_rate": 0.0032,
+    "p95_latency_ms": 112
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:33:00Z",
+    "cpu_percent": 45.2,
+    "memory_percent": 54.4,
+    "request_rate": 908,
+    "error_rate": 0.0042,
+    "p95_latency_ms": 113
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:34:00Z",
+    "cpu_percent": 48.5,
+    "memory_percent": 47.3,
+    "request_rate": 5026,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 92
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:34:00Z",
+    "cpu_percent": 35.9,
+    "memory_percent": 51.0,
+    "request_rate": 1462,
+    "error_rate": 0.002,
+    "p95_latency_ms": 59
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:34:00Z",
+    "cpu_percent": 40.7,
+    "memory_percent": 53.0,
+    "request_rate": 294,
+    "error_rate": 0.0054,
+    "p95_latency_ms": 141
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:34:00Z",
+    "cpu_percent": 30.6,
+    "memory_percent": 45.0,
+    "request_rate": 41,
+    "error_rate": 0.003,
+    "p95_latency_ms": 413
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:34:00Z",
+    "cpu_percent": 46.5,
+    "memory_percent": 59.1,
+    "request_rate": 1206,
+    "error_rate": 0.0096,
+    "p95_latency_ms": 182
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:34:00Z",
+    "cpu_percent": 38.8,
+    "memory_percent": 58.4,
+    "request_rate": 352,
+    "error_rate": 0.0048,
+    "p95_latency_ms": 256
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:34:00Z",
+    "cpu_percent": 37.5,
+    "memory_percent": 73.3,
+    "request_rate": 4283,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:34:00Z",
+    "cpu_percent": 25.9,
+    "memory_percent": 86.3,
+    "request_rate": 8110,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:34:00Z",
+    "cpu_percent": 38.0,
+    "memory_percent": 49.3,
+    "request_rate": 618,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 113
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:34:00Z",
+    "cpu_percent": 46.1,
+    "memory_percent": 55.4,
+    "request_rate": 886,
+    "error_rate": 0.0038,
+    "p95_latency_ms": 127
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:35:00Z",
+    "cpu_percent": 49.4,
+    "memory_percent": 48.8,
+    "request_rate": 5405,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 87
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:35:00Z",
+    "cpu_percent": 36.2,
+    "memory_percent": 50.0,
+    "request_rate": 1557,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 58
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:35:00Z",
+    "cpu_percent": 42.0,
+    "memory_percent": 52.9,
+    "request_rate": 311,
+    "error_rate": 0.005,
+    "p95_latency_ms": 135
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:35:00Z",
+    "cpu_percent": 30.0,
+    "memory_percent": 44.3,
+    "request_rate": 40,
+    "error_rate": 0.0032,
+    "p95_latency_ms": 378
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:35:00Z",
+    "cpu_percent": 48.8,
+    "memory_percent": 59.3,
+    "request_rate": 1216,
+    "error_rate": 0.0096,
+    "p95_latency_ms": 180
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:35:00Z",
+    "cpu_percent": 40.9,
+    "memory_percent": 57.2,
+    "request_rate": 354,
+    "error_rate": 0.0052,
+    "p95_latency_ms": 238
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:35:00Z",
+    "cpu_percent": 38.3,
+    "memory_percent": 73.3,
+    "request_rate": 4120,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:35:00Z",
+    "cpu_percent": 25.6,
+    "memory_percent": 89.1,
+    "request_rate": 8362,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:35:00Z",
+    "cpu_percent": 38.0,
+    "memory_percent": 50.8,
+    "request_rate": 603,
+    "error_rate": 0.0031,
+    "p95_latency_ms": 104
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:35:00Z",
+    "cpu_percent": 44.4,
+    "memory_percent": 54.1,
+    "request_rate": 864,
+    "error_rate": 0.0042,
+    "p95_latency_ms": 121
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:36:00Z",
+    "cpu_percent": 50.5,
+    "memory_percent": 48.1,
+    "request_rate": 5005,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 90
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:36:00Z",
+    "cpu_percent": 35.8,
+    "memory_percent": 49.8,
+    "request_rate": 1565,
+    "error_rate": 0.002,
+    "p95_latency_ms": 62
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:36:00Z",
+    "cpu_percent": 40.7,
+    "memory_percent": 51.3,
+    "request_rate": 299,
+    "error_rate": 0.0048,
+    "p95_latency_ms": 135
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:36:00Z",
+    "cpu_percent": 30.7,
+    "memory_percent": 45.7,
+    "request_rate": 40,
+    "error_rate": 0.003,
+    "p95_latency_ms": 422
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:36:00Z",
+    "cpu_percent": 49.6,
+    "memory_percent": 60.8,
+    "request_rate": 1151,
+    "error_rate": 0.0099,
+    "p95_latency_ms": 175
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:36:00Z",
+    "cpu_percent": 41.0,
+    "memory_percent": 59.1,
+    "request_rate": 336,
+    "error_rate": 0.0046,
+    "p95_latency_ms": 244
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:36:00Z",
+    "cpu_percent": 38.9,
+    "memory_percent": 72.9,
+    "request_rate": 4271,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:36:00Z",
+    "cpu_percent": 25.2,
+    "memory_percent": 90.2,
+    "request_rate": 7628,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:36:00Z",
+    "cpu_percent": 36.6,
+    "memory_percent": 50.7,
+    "request_rate": 627,
+    "error_rate": 0.0031,
+    "p95_latency_ms": 113
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:36:00Z",
+    "cpu_percent": 46.1,
+    "memory_percent": 55.5,
+    "request_rate": 903,
+    "error_rate": 0.0043,
+    "p95_latency_ms": 118
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:37:00Z",
+    "cpu_percent": 50.0,
+    "memory_percent": 47.4,
+    "request_rate": 5430,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 92
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:37:00Z",
+    "cpu_percent": 34.4,
+    "memory_percent": 49.6,
+    "request_rate": 1513,
+    "error_rate": 0.0022,
+    "p95_latency_ms": 60
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:37:00Z",
+    "cpu_percent": 42.8,
+    "memory_percent": 52.6,
+    "request_rate": 302,
+    "error_rate": 0.0052,
+    "p95_latency_ms": 135
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:37:00Z",
+    "cpu_percent": 28.9,
+    "memory_percent": 45.0,
+    "request_rate": 40,
+    "error_rate": 0.0031,
+    "p95_latency_ms": 400
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:37:00Z",
+    "cpu_percent": 46.1,
+    "memory_percent": 60.7,
+    "request_rate": 1216,
+    "error_rate": 0.0096,
+    "p95_latency_ms": 185
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:37:00Z",
+    "cpu_percent": 40.6,
+    "memory_percent": 59.1,
+    "request_rate": 346,
+    "error_rate": 0.0052,
+    "p95_latency_ms": 237
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:37:00Z",
+    "cpu_percent": 38.7,
+    "memory_percent": 72.5,
+    "request_rate": 4211,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:37:00Z",
+    "cpu_percent": 25.6,
+    "memory_percent": 89.4,
+    "request_rate": 7906,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:37:00Z",
+    "cpu_percent": 37.7,
+    "memory_percent": 50.7,
+    "request_rate": 584,
+    "error_rate": 0.0031,
+    "p95_latency_ms": 104
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:37:00Z",
+    "cpu_percent": 45.2,
+    "memory_percent": 55.7,
+    "request_rate": 911,
+    "error_rate": 0.0042,
+    "p95_latency_ms": 121
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:38:00Z",
+    "cpu_percent": 50.9,
+    "memory_percent": 48.2,
+    "request_rate": 5378,
+    "error_rate": 0.002,
+    "p95_latency_ms": 94
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:38:00Z",
+    "cpu_percent": 34.0,
+    "memory_percent": 50.1,
+    "request_rate": 1477,
+    "error_rate": 0.002,
+    "p95_latency_ms": 60
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:38:00Z",
+    "cpu_percent": 43.2,
+    "memory_percent": 52.8,
+    "request_rate": 310,
+    "error_rate": 0.005,
+    "p95_latency_ms": 133
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:38:00Z",
+    "cpu_percent": 31.0,
+    "memory_percent": 44.2,
+    "request_rate": 38,
+    "error_rate": 0.0031,
+    "p95_latency_ms": 379
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:38:00Z",
+    "cpu_percent": 48.2,
+    "memory_percent": 59.8,
+    "request_rate": 1141,
+    "error_rate": 0.0093,
+    "p95_latency_ms": 188
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:38:00Z",
+    "cpu_percent": 40.6,
+    "memory_percent": 58.3,
+    "request_rate": 336,
+    "error_rate": 0.0052,
+    "p95_latency_ms": 261
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:38:00Z",
+    "cpu_percent": 37.8,
+    "memory_percent": 71.6,
+    "request_rate": 4142,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:38:00Z",
+    "cpu_percent": 25.2,
+    "memory_percent": 91.2,
+    "request_rate": 8359,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:38:00Z",
+    "cpu_percent": 38.0,
+    "memory_percent": 49.7,
+    "request_rate": 607,
+    "error_rate": 0.0031,
+    "p95_latency_ms": 112
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:38:00Z",
+    "cpu_percent": 45.7,
+    "memory_percent": 54.0,
+    "request_rate": 876,
+    "error_rate": 0.0039,
+    "p95_latency_ms": 114
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:39:00Z",
+    "cpu_percent": 48.1,
+    "memory_percent": 47.1,
+    "request_rate": 5274,
+    "error_rate": 0.002,
+    "p95_latency_ms": 92
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:39:00Z",
+    "cpu_percent": 34.9,
+    "memory_percent": 49.6,
+    "request_rate": 1453,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 61
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:39:00Z",
+    "cpu_percent": 42.6,
+    "memory_percent": 51.3,
+    "request_rate": 289,
+    "error_rate": 0.0049,
+    "p95_latency_ms": 136
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:39:00Z",
+    "cpu_percent": 29.5,
+    "memory_percent": 45.2,
+    "request_rate": 40,
+    "error_rate": 0.0029,
+    "p95_latency_ms": 424
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:39:00Z",
+    "cpu_percent": 49.6,
+    "memory_percent": 60.1,
+    "request_rate": 1240,
+    "error_rate": 0.0101,
+    "p95_latency_ms": 172
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:39:00Z",
+    "cpu_percent": 40.3,
+    "memory_percent": 57.1,
+    "request_rate": 367,
+    "error_rate": 0.0052,
+    "p95_latency_ms": 245
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:39:00Z",
+    "cpu_percent": 37.1,
+    "memory_percent": 73.3,
+    "request_rate": 4194,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:39:00Z",
+    "cpu_percent": 25.5,
+    "memory_percent": 91.6,
+    "request_rate": 8024,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:39:00Z",
+    "cpu_percent": 37.9,
+    "memory_percent": 50.0,
+    "request_rate": 570,
+    "error_rate": 0.003,
+    "p95_latency_ms": 104
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:39:00Z",
+    "cpu_percent": 44.0,
+    "memory_percent": 54.1,
+    "request_rate": 880,
+    "error_rate": 0.0041,
+    "p95_latency_ms": 118
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:40:00Z",
+    "cpu_percent": 51.1,
+    "memory_percent": 47.8,
+    "request_rate": 5272,
+    "error_rate": 0.002,
+    "p95_latency_ms": 91
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:40:00Z",
+    "cpu_percent": 34.3,
+    "memory_percent": 50.6,
+    "request_rate": 1432,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 61
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:40:00Z",
+    "cpu_percent": 41.2,
+    "memory_percent": 51.4,
+    "request_rate": 308,
+    "error_rate": 0.0054,
+    "p95_latency_ms": 137
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:40:00Z",
+    "cpu_percent": 30.1,
+    "memory_percent": 44.9,
+    "request_rate": 40,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 410
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:40:00Z",
+    "cpu_percent": 46.6,
+    "memory_percent": 59.5,
+    "request_rate": 1248,
+    "error_rate": 0.0105,
+    "p95_latency_ms": 188
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:40:00Z",
+    "cpu_percent": 39.8,
+    "memory_percent": 57.7,
+    "request_rate": 350,
+    "error_rate": 0.0049,
+    "p95_latency_ms": 260
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:40:00Z",
+    "cpu_percent": 36.9,
+    "memory_percent": 70.8,
+    "request_rate": 4345,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:40:00Z",
+    "cpu_percent": 25.3,
+    "memory_percent": 91.1,
+    "request_rate": 7691,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:40:00Z",
+    "cpu_percent": 38.1,
+    "memory_percent": 49.5,
+    "request_rate": 629,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 114
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:40:00Z",
+    "cpu_percent": 44.5,
+    "memory_percent": 54.4,
+    "request_rate": 879,
+    "error_rate": 0.0043,
+    "p95_latency_ms": 122
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:41:00Z",
+    "cpu_percent": 49.2,
+    "memory_percent": 48.9,
+    "request_rate": 5191,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 92
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:41:00Z",
+    "cpu_percent": 35.9,
+    "memory_percent": 49.8,
+    "request_rate": 1525,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 63
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:41:00Z",
+    "cpu_percent": 42.7,
+    "memory_percent": 51.0,
+    "request_rate": 305,
+    "error_rate": 0.0052,
+    "p95_latency_ms": 133
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:41:00Z",
+    "cpu_percent": 30.8,
+    "memory_percent": 45.3,
+    "request_rate": 924,
+    "error_rate": 0.0031,
+    "p95_latency_ms": 145
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:41:00Z",
+    "cpu_percent": 49.5,
+    "memory_percent": 59.3,
+    "request_rate": 1170,
+    "error_rate": 0.0094,
+    "p95_latency_ms": 186
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:41:00Z",
+    "cpu_percent": 41.0,
+    "memory_percent": 57.1,
+    "request_rate": 366,
+    "error_rate": 0.0051,
+    "p95_latency_ms": 260
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:41:00Z",
+    "cpu_percent": 38.8,
+    "memory_percent": 73.0,
+    "request_rate": 4361,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:41:00Z",
+    "cpu_percent": 25.0,
+    "memory_percent": 92.3,
+    "request_rate": 8049,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:41:00Z",
+    "cpu_percent": 38.5,
+    "memory_percent": 50.6,
+    "request_rate": 625,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 105
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:41:00Z",
+    "cpu_percent": 45.4,
+    "memory_percent": 54.3,
+    "request_rate": 921,
+    "error_rate": 0.0038,
+    "p95_latency_ms": 118
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:42:00Z",
+    "cpu_percent": 49.2,
+    "memory_percent": 47.2,
+    "request_rate": 4971,
+    "error_rate": 0.002,
+    "p95_latency_ms": 90
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:42:00Z",
+    "cpu_percent": 35.0,
+    "memory_percent": 49.1,
+    "request_rate": 1500,
+    "error_rate": 0.002,
+    "p95_latency_ms": 63
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:42:00Z",
+    "cpu_percent": 40.7,
+    "memory_percent": 51.6,
+    "request_rate": 297,
+    "error_rate": 0.005,
+    "p95_latency_ms": 147
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:42:00Z",
+    "cpu_percent": 29.9,
+    "memory_percent": 44.5,
+    "request_rate": 886,
+    "error_rate": 0.003,
+    "p95_latency_ms": 148
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:42:00Z",
+    "cpu_percent": 49.5,
+    "memory_percent": 59.8,
+    "request_rate": 1214,
+    "error_rate": 0.0094,
+    "p95_latency_ms": 189
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:42:00Z",
+    "cpu_percent": 40.7,
+    "memory_percent": 57.9,
+    "request_rate": 358,
+    "error_rate": 0.0054,
+    "p95_latency_ms": 243
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:42:00Z",
+    "cpu_percent": 37.5,
+    "memory_percent": 72.8,
+    "request_rate": 4045,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:42:00Z",
+    "cpu_percent": 24.5,
+    "memory_percent": 93.2,
+    "request_rate": 8397,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:42:00Z",
+    "cpu_percent": 36.9,
+    "memory_percent": 49.4,
+    "request_rate": 602,
+    "error_rate": 0.0032,
+    "p95_latency_ms": 107
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:42:00Z",
+    "cpu_percent": 46.8,
+    "memory_percent": 55.3,
+    "request_rate": 905,
+    "error_rate": 0.0041,
+    "p95_latency_ms": 125
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:43:00Z",
+    "cpu_percent": 48.8,
+    "memory_percent": 48.2,
+    "request_rate": 5103,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 93
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:43:00Z",
+    "cpu_percent": 36.0,
+    "memory_percent": 49.9,
+    "request_rate": 1504,
+    "error_rate": 0.002,
+    "p95_latency_ms": 62
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:43:00Z",
+    "cpu_percent": 42.7,
+    "memory_percent": 51.6,
+    "request_rate": 289,
+    "error_rate": 0.0053,
+    "p95_latency_ms": 137
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:43:00Z",
+    "cpu_percent": 29.0,
+    "memory_percent": 44.9,
+    "request_rate": 915,
+    "error_rate": 0.0029,
+    "p95_latency_ms": 144
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:43:00Z",
+    "cpu_percent": 49.4,
+    "memory_percent": 61.1,
+    "request_rate": 1237,
+    "error_rate": 0.0106,
+    "p95_latency_ms": 170
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:43:00Z",
+    "cpu_percent": 41.0,
+    "memory_percent": 58.1,
+    "request_rate": 349,
+    "error_rate": 0.0049,
+    "p95_latency_ms": 257
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:43:00Z",
+    "cpu_percent": 37.0,
+    "memory_percent": 73.0,
+    "request_rate": 4314,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:43:00Z",
+    "cpu_percent": 25.8,
+    "memory_percent": 94.1,
+    "request_rate": 7698,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:43:00Z",
+    "cpu_percent": 37.7,
+    "memory_percent": 49.7,
+    "request_rate": 594,
+    "error_rate": 0.003,
+    "p95_latency_ms": 116
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:43:00Z",
+    "cpu_percent": 46.0,
+    "memory_percent": 54.4,
+    "request_rate": 858,
+    "error_rate": 0.0039,
+    "p95_latency_ms": 117
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:44:00Z",
+    "cpu_percent": 51.4,
+    "memory_percent": 48.9,
+    "request_rate": 5008,
+    "error_rate": 0.002,
+    "p95_latency_ms": 91
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:44:00Z",
+    "cpu_percent": 34.7,
+    "memory_percent": 50.3,
+    "request_rate": 1448,
+    "error_rate": 0.002,
+    "p95_latency_ms": 63
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:44:00Z",
+    "cpu_percent": 42.4,
+    "memory_percent": 51.4,
+    "request_rate": 289,
+    "error_rate": 0.0047,
+    "p95_latency_ms": 144
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:44:00Z",
+    "cpu_percent": 31.0,
+    "memory_percent": 44.2,
+    "request_rate": 207,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 86
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:44:00Z",
+    "cpu_percent": 48.9,
+    "memory_percent": 59.6,
+    "request_rate": 1252,
+    "error_rate": 0.0105,
+    "p95_latency_ms": 188
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:44:00Z",
+    "cpu_percent": 39.3,
+    "memory_percent": 58.8,
+    "request_rate": 362,
+    "error_rate": 0.0047,
+    "p95_latency_ms": 261
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:44:00Z",
+    "cpu_percent": 37.0,
+    "memory_percent": 71.8,
+    "request_rate": 4163,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:44:00Z",
+    "cpu_percent": 24.9,
+    "memory_percent": 96.3,
+    "request_rate": 7956,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:44:00Z",
+    "cpu_percent": 37.2,
+    "memory_percent": 50.4,
+    "request_rate": 621,
+    "error_rate": 0.0031,
+    "p95_latency_ms": 115
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:44:00Z",
+    "cpu_percent": 44.0,
+    "memory_percent": 56.0,
+    "request_rate": 934,
+    "error_rate": 0.0039,
+    "p95_latency_ms": 122
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:45:00Z",
+    "cpu_percent": 49.3,
+    "memory_percent": 47.9,
+    "request_rate": 5079,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 86
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:45:00Z",
+    "cpu_percent": 34.5,
+    "memory_percent": 50.4,
+    "request_rate": 1522,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 63
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:45:00Z",
+    "cpu_percent": 42.4,
+    "memory_percent": 51.8,
+    "request_rate": 301,
+    "error_rate": 0.005,
+    "p95_latency_ms": 141
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:45:00Z",
+    "cpu_percent": 30.6,
+    "memory_percent": 45.6,
+    "request_rate": 201,
+    "error_rate": 0.003,
+    "p95_latency_ms": 91
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:45:00Z",
+    "cpu_percent": 49.2,
+    "memory_percent": 59.4,
+    "request_rate": 1234,
+    "error_rate": 0.0094,
+    "p95_latency_ms": 188
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:45:00Z",
+    "cpu_percent": 39.2,
+    "memory_percent": 57.9,
+    "request_rate": 354,
+    "error_rate": 0.0049,
+    "p95_latency_ms": 236
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:45:00Z",
+    "cpu_percent": 37.2,
+    "memory_percent": 71.8,
+    "request_rate": 4110,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:45:00Z",
+    "cpu_percent": 25.4,
+    "memory_percent": 96.8,
+    "request_rate": 7856,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:45:00Z",
+    "cpu_percent": 38.8,
+    "memory_percent": 49.2,
+    "request_rate": 593,
+    "error_rate": 0.003,
+    "p95_latency_ms": 104
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:45:00Z",
+    "cpu_percent": 44.6,
+    "memory_percent": 55.9,
+    "request_rate": 896,
+    "error_rate": 0.0038,
+    "p95_latency_ms": 116
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:46:00Z",
+    "cpu_percent": 49.2,
+    "memory_percent": 47.8,
+    "request_rate": 5260,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 94
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:46:00Z",
+    "cpu_percent": 36.0,
+    "memory_percent": 49.8,
+    "request_rate": 1472,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 62
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:46:00Z",
+    "cpu_percent": 42.6,
+    "memory_percent": 51.4,
+    "request_rate": 292,
+    "error_rate": 0.0052,
+    "p95_latency_ms": 146
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:46:00Z",
+    "cpu_percent": 29.6,
+    "memory_percent": 44.3,
+    "request_rate": 197,
+    "error_rate": 0.0031,
+    "p95_latency_ms": 93
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:46:00Z",
+    "cpu_percent": 49.4,
+    "memory_percent": 59.3,
+    "request_rate": 1238,
+    "error_rate": 0.0099,
+    "p95_latency_ms": 176
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:46:00Z",
+    "cpu_percent": 41.5,
+    "memory_percent": 57.3,
+    "request_rate": 340,
+    "error_rate": 0.0069,
+    "p95_latency_ms": 358
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:46:00Z",
+    "cpu_percent": 37.8,
+    "memory_percent": 72.1,
+    "request_rate": 4120,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:46:00Z",
+    "cpu_percent": 24.1,
+    "memory_percent": 96.4,
+    "request_rate": 8313,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:46:00Z",
+    "cpu_percent": 36.5,
+    "memory_percent": 49.3,
+    "request_rate": 600,
+    "error_rate": 0.003,
+    "p95_latency_ms": 114
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:46:00Z",
+    "cpu_percent": 45.2,
+    "memory_percent": 54.5,
+    "request_rate": 908,
+    "error_rate": 0.0043,
+    "p95_latency_ms": 119
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:47:00Z",
+    "cpu_percent": 48.6,
+    "memory_percent": 47.7,
+    "request_rate": 5240,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 93
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:47:00Z",
+    "cpu_percent": 36.0,
+    "memory_percent": 49.1,
+    "request_rate": 1435,
+    "error_rate": 0.002,
+    "p95_latency_ms": 63
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:47:00Z",
+    "cpu_percent": 40.6,
+    "memory_percent": 51.9,
+    "request_rate": 306,
+    "error_rate": 0.0047,
+    "p95_latency_ms": 141
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:47:00Z",
+    "cpu_percent": 30.9,
+    "memory_percent": 45.4,
+    "request_rate": 209,
+    "error_rate": 0.003,
+    "p95_latency_ms": 88
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:47:00Z",
+    "cpu_percent": 49.1,
+    "memory_percent": 59.3,
+    "request_rate": 1143,
+    "error_rate": 0.0095,
+    "p95_latency_ms": 176
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:47:00Z",
+    "cpu_percent": 42.0,
+    "memory_percent": 58.5,
+    "request_rate": 342,
+    "error_rate": 0.0076,
+    "p95_latency_ms": 506
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:47:00Z",
+    "cpu_percent": 37.9,
+    "memory_percent": 73.0,
+    "request_rate": 4144,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:47:00Z",
+    "cpu_percent": 25.4,
+    "memory_percent": 98.6,
+    "request_rate": 8110,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:47:00Z",
+    "cpu_percent": 38.2,
+    "memory_percent": 50.7,
+    "request_rate": 576,
+    "error_rate": 0.003,
+    "p95_latency_ms": 104
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:47:00Z",
+    "cpu_percent": 44.0,
+    "memory_percent": 56.1,
+    "request_rate": 901,
+    "error_rate": 0.0037,
+    "p95_latency_ms": 113
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:48:00Z",
+    "cpu_percent": 50.0,
+    "memory_percent": 48.0,
+    "request_rate": 5199,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 85
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:48:00Z",
+    "cpu_percent": 36.4,
+    "memory_percent": 50.5,
+    "request_rate": 1490,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 61
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:48:00Z",
+    "cpu_percent": 40.5,
+    "memory_percent": 52.1,
+    "request_rate": 300,
+    "error_rate": 0.0051,
+    "p95_latency_ms": 134
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:48:00Z",
+    "cpu_percent": 30.2,
+    "memory_percent": 44.5,
+    "request_rate": 203,
+    "error_rate": 0.0029,
+    "p95_latency_ms": 86
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:48:00Z",
+    "cpu_percent": 49.4,
+    "memory_percent": 61.1,
+    "request_rate": 1173,
+    "error_rate": 0.0102,
+    "p95_latency_ms": 178
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:48:00Z",
+    "cpu_percent": 39.8,
+    "memory_percent": 58.5,
+    "request_rate": 350,
+    "error_rate": 0.0102,
+    "p95_latency_ms": 609
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:48:00Z",
+    "cpu_percent": 39.5,
+    "memory_percent": 71.9,
+    "request_rate": 4108,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:48:00Z",
+    "cpu_percent": 25.0,
+    "memory_percent": 96.1,
+    "request_rate": 7761,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:48:00Z",
+    "cpu_percent": 37.1,
+    "memory_percent": 50.7,
+    "request_rate": 623,
+    "error_rate": 0.003,
+    "p95_latency_ms": 104
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:48:00Z",
+    "cpu_percent": 43.6,
+    "memory_percent": 55.3,
+    "request_rate": 926,
+    "error_rate": 0.004,
+    "p95_latency_ms": 114
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:49:00Z",
+    "cpu_percent": 51.8,
+    "memory_percent": 48.0,
+    "request_rate": 5443,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 88
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:49:00Z",
+    "cpu_percent": 36.0,
+    "memory_percent": 49.9,
+    "request_rate": 1529,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 57
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:49:00Z",
+    "cpu_percent": 41.4,
+    "memory_percent": 52.0,
+    "request_rate": 288,
+    "error_rate": 0.0048,
+    "p95_latency_ms": 141
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:49:00Z",
+    "cpu_percent": 30.8,
+    "memory_percent": 44.8,
+    "request_rate": 205,
+    "error_rate": 0.003,
+    "p95_latency_ms": 93
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:49:00Z",
+    "cpu_percent": 49.8,
+    "memory_percent": 60.1,
+    "request_rate": 1253,
+    "error_rate": 0.0094,
+    "p95_latency_ms": 190
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:49:00Z",
+    "cpu_percent": 42.1,
+    "memory_percent": 58.0,
+    "request_rate": 360,
+    "error_rate": 0.0107,
+    "p95_latency_ms": 686
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:49:00Z",
+    "cpu_percent": 38.1,
+    "memory_percent": 73.3,
+    "request_rate": 4333,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:49:00Z",
+    "cpu_percent": 25.6,
+    "memory_percent": 96.4,
+    "request_rate": 8043,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:49:00Z",
+    "cpu_percent": 36.7,
+    "memory_percent": 50.9,
+    "request_rate": 624,
+    "error_rate": 0.003,
+    "p95_latency_ms": 104
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:49:00Z",
+    "cpu_percent": 44.6,
+    "memory_percent": 56.1,
+    "request_rate": 903,
+    "error_rate": 0.0043,
+    "p95_latency_ms": 125
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:50:00Z",
+    "cpu_percent": 48.2,
+    "memory_percent": 48.0,
+    "request_rate": 5399,
+    "error_rate": 0.002,
+    "p95_latency_ms": 90
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:50:00Z",
+    "cpu_percent": 35.8,
+    "memory_percent": 49.6,
+    "request_rate": 1481,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 60
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:50:00Z",
+    "cpu_percent": 40.6,
+    "memory_percent": 52.0,
+    "request_rate": 309,
+    "error_rate": 0.005,
+    "p95_latency_ms": 140
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:50:00Z",
+    "cpu_percent": 30.8,
+    "memory_percent": 45.9,
+    "request_rate": 206,
+    "error_rate": 0.0031,
+    "p95_latency_ms": 92
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:50:00Z",
+    "cpu_percent": 46.8,
+    "memory_percent": 61.1,
+    "request_rate": 1172,
+    "error_rate": 0.0094,
+    "p95_latency_ms": 179
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:50:00Z",
+    "cpu_percent": 42.6,
+    "memory_percent": 57.6,
+    "request_rate": 353,
+    "error_rate": 0.0129,
+    "p95_latency_ms": 828
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:50:00Z",
+    "cpu_percent": 40.8,
+    "memory_percent": 71.3,
+    "request_rate": 4259,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "redis-cache",
+    "timestamp": "2026-09-30T09:50:00Z",
+    "cpu_percent": 25.6,
+    "memory_percent": 99.2,
+    "request_rate": 8090,
+    "error_rate": 0.0,
+    "p95_latency_ms": 1
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:50:00Z",
+    "cpu_percent": 39.3,
+    "memory_percent": 49.6,
+    "request_rate": 628,
+    "error_rate": 0.003,
+    "p95_latency_ms": 113
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:50:00Z",
+    "cpu_percent": 43.2,
+    "memory_percent": 55.5,
+    "request_rate": 916,
+    "error_rate": 0.004,
+    "p95_latency_ms": 117
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:51:00Z",
+    "cpu_percent": 50.1,
+    "memory_percent": 48.7,
+    "request_rate": 5164,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 92
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:51:00Z",
+    "cpu_percent": 35.2,
+    "memory_percent": 50.6,
+    "request_rate": 1450,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 63
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:51:00Z",
+    "cpu_percent": 41.9,
+    "memory_percent": 51.1,
+    "request_rate": 299,
+    "error_rate": 0.0052,
+    "p95_latency_ms": 144
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:51:00Z",
+    "cpu_percent": 28.9,
+    "memory_percent": 45.8,
+    "request_rate": 207,
+    "error_rate": 0.0029,
+    "p95_latency_ms": 87
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:51:00Z",
+    "cpu_percent": 48.9,
+    "memory_percent": 59.6,
+    "request_rate": 1213,
+    "error_rate": 0.01,
+    "p95_latency_ms": 178
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:51:00Z",
+    "cpu_percent": 42.1,
+    "memory_percent": 58.6,
+    "request_rate": 344,
+    "error_rate": 0.0151,
+    "p95_latency_ms": 914
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:51:00Z",
+    "cpu_percent": 42.2,
+    "memory_percent": 70.9,
+    "request_rate": 4345,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:51:00Z",
+    "cpu_percent": 38.6,
+    "memory_percent": 49.8,
+    "request_rate": 431,
+    "error_rate": 0.4257,
+    "p95_latency_ms": 9882
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:51:00Z",
+    "cpu_percent": 45.5,
+    "memory_percent": 54.1,
+    "request_rate": 894,
+    "error_rate": 0.004,
+    "p95_latency_ms": 127
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:52:00Z",
+    "cpu_percent": 51.1,
+    "memory_percent": 47.7,
+    "request_rate": 5148,
+    "error_rate": 0.002,
+    "p95_latency_ms": 87
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:52:00Z",
+    "cpu_percent": 35.3,
+    "memory_percent": 49.5,
+    "request_rate": 1562,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 60
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:52:00Z",
+    "cpu_percent": 41.7,
+    "memory_percent": 52.7,
+    "request_rate": 307,
+    "error_rate": 0.0051,
+    "p95_latency_ms": 132
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:52:00Z",
+    "cpu_percent": 30.5,
+    "memory_percent": 44.7,
+    "request_rate": 197,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 94
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:52:00Z",
+    "cpu_percent": 48.3,
+    "memory_percent": 59.4,
+    "request_rate": 1225,
+    "error_rate": 0.0092,
+    "p95_latency_ms": 189
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:52:00Z",
+    "cpu_percent": 41.9,
+    "memory_percent": 57.1,
+    "request_rate": 339,
+    "error_rate": 0.0152,
+    "p95_latency_ms": 1060
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:52:00Z",
+    "cpu_percent": 41.3,
+    "memory_percent": 72.8,
+    "request_rate": 4105,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:52:00Z",
+    "cpu_percent": 39.0,
+    "memory_percent": 49.8,
+    "request_rate": 468,
+    "error_rate": 0.4379,
+    "p95_latency_ms": 10513
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:52:00Z",
+    "cpu_percent": 61.8,
+    "memory_percent": 54.5,
+    "request_rate": 900,
+    "error_rate": 0.1707,
+    "p95_latency_ms": 682
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:53:00Z",
+    "cpu_percent": 50.2,
+    "memory_percent": 47.2,
+    "request_rate": 5202,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 88
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:53:00Z",
+    "cpu_percent": 34.3,
+    "memory_percent": 49.5,
+    "request_rate": 1426,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 63
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:53:00Z",
+    "cpu_percent": 41.5,
+    "memory_percent": 51.1,
+    "request_rate": 315,
+    "error_rate": 0.0053,
+    "p95_latency_ms": 133
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:53:00Z",
+    "cpu_percent": 30.2,
+    "memory_percent": 44.8,
+    "request_rate": 193,
+    "error_rate": 0.0031,
+    "p95_latency_ms": 85
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:53:00Z",
+    "cpu_percent": 48.1,
+    "memory_percent": 60.5,
+    "request_rate": 1229,
+    "error_rate": 0.0103,
+    "p95_latency_ms": 177
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:53:00Z",
+    "cpu_percent": 44.1,
+    "memory_percent": 57.3,
+    "request_rate": 340,
+    "error_rate": 0.0178,
+    "p95_latency_ms": 1202
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:53:00Z",
+    "cpu_percent": 40.8,
+    "memory_percent": 71.8,
+    "request_rate": 4387,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:53:00Z",
+    "cpu_percent": 36.9,
+    "memory_percent": 51.0,
+    "request_rate": 460,
+    "error_rate": 0.4501,
+    "p95_latency_ms": 10781
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:53:00Z",
+    "cpu_percent": 61.8,
+    "memory_percent": 54.6,
+    "request_rate": 913,
+    "error_rate": 0.1831,
+    "p95_latency_ms": 623
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:54:00Z",
+    "cpu_percent": 52.0,
+    "memory_percent": 48.3,
+    "request_rate": 5002,
+    "error_rate": 0.0022,
+    "p95_latency_ms": 89
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:54:00Z",
+    "cpu_percent": 35.5,
+    "memory_percent": 49.3,
+    "request_rate": 1491,
+    "error_rate": 0.002,
+    "p95_latency_ms": 61
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:54:00Z",
+    "cpu_percent": 43.5,
+    "memory_percent": 51.0,
+    "request_rate": 297,
+    "error_rate": 0.0052,
+    "p95_latency_ms": 144
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:54:00Z",
+    "cpu_percent": 30.6,
+    "memory_percent": 44.5,
+    "request_rate": 198,
+    "error_rate": 0.0029,
+    "p95_latency_ms": 89
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:54:00Z",
+    "cpu_percent": 46.3,
+    "memory_percent": 60.4,
+    "request_rate": 1180,
+    "error_rate": 0.0097,
+    "p95_latency_ms": 188
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:54:00Z",
+    "cpu_percent": 45.3,
+    "memory_percent": 58.1,
+    "request_rate": 342,
+    "error_rate": 0.0182,
+    "p95_latency_ms": 1238
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:54:00Z",
+    "cpu_percent": 41.8,
+    "memory_percent": 71.6,
+    "request_rate": 4001,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:54:00Z",
+    "cpu_percent": 36.6,
+    "memory_percent": 49.9,
+    "request_rate": 465,
+    "error_rate": 0.4385,
+    "p95_latency_ms": 10529
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:54:00Z",
+    "cpu_percent": 61.3,
+    "memory_percent": 55.1,
+    "request_rate": 925,
+    "error_rate": 0.1809,
+    "p95_latency_ms": 611
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:55:00Z",
+    "cpu_percent": 51.2,
+    "memory_percent": 47.7,
+    "request_rate": 5428,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 87
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:55:00Z",
+    "cpu_percent": 35.4,
+    "memory_percent": 49.8,
+    "request_rate": 1463,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 58
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:55:00Z",
+    "cpu_percent": 43.6,
+    "memory_percent": 52.3,
+    "request_rate": 298,
+    "error_rate": 0.0054,
+    "p95_latency_ms": 138
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:55:00Z",
+    "cpu_percent": 30.5,
+    "memory_percent": 45.5,
+    "request_rate": 201,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 85
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:55:00Z",
+    "cpu_percent": 48.8,
+    "memory_percent": 59.5,
+    "request_rate": 1177,
+    "error_rate": 0.0099,
+    "p95_latency_ms": 178
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:55:00Z",
+    "cpu_percent": 43.0,
+    "memory_percent": 57.3,
+    "request_rate": 333,
+    "error_rate": 0.0211,
+    "p95_latency_ms": 1362
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:55:00Z",
+    "cpu_percent": 42.0,
+    "memory_percent": 71.2,
+    "request_rate": 4408,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:55:00Z",
+    "cpu_percent": 39.4,
+    "memory_percent": 49.8,
+    "request_rate": 462,
+    "error_rate": 0.4161,
+    "p95_latency_ms": 9923
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:55:00Z",
+    "cpu_percent": 59.2,
+    "memory_percent": 53.9,
+    "request_rate": 939,
+    "error_rate": 0.1909,
+    "p95_latency_ms": 676
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:56:00Z",
+    "cpu_percent": 50.0,
+    "memory_percent": 48.0,
+    "request_rate": 4964,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 88
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:56:00Z",
+    "cpu_percent": 34.7,
+    "memory_percent": 50.0,
+    "request_rate": 1461,
+    "error_rate": 0.002,
+    "p95_latency_ms": 61
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:56:00Z",
+    "cpu_percent": 43.2,
+    "memory_percent": 52.8,
+    "request_rate": 296,
+    "error_rate": 0.0051,
+    "p95_latency_ms": 143
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:56:00Z",
+    "cpu_percent": 29.2,
+    "memory_percent": 45.2,
+    "request_rate": 203,
+    "error_rate": 0.0029,
+    "p95_latency_ms": 92
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:56:00Z",
+    "cpu_percent": 47.2,
+    "memory_percent": 59.1,
+    "request_rate": 1190,
+    "error_rate": 0.0107,
+    "p95_latency_ms": 184
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:56:00Z",
+    "cpu_percent": 46.1,
+    "memory_percent": 58.1,
+    "request_rate": 357,
+    "error_rate": 0.0212,
+    "p95_latency_ms": 1582
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:56:00Z",
+    "cpu_percent": 40.4,
+    "memory_percent": 73.2,
+    "request_rate": 4342,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:56:00Z",
+    "cpu_percent": 39.5,
+    "memory_percent": 50.0,
+    "request_rate": 444,
+    "error_rate": 0.4818,
+    "p95_latency_ms": 10117
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:56:00Z",
+    "cpu_percent": 59.1,
+    "memory_percent": 54.0,
+    "request_rate": 934,
+    "error_rate": 0.1929,
+    "p95_latency_ms": 618
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:57:00Z",
+    "cpu_percent": 81.8,
+    "memory_percent": 47.9,
+    "request_rate": 15159,
+    "error_rate": 0.002,
+    "p95_latency_ms": 881
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:57:00Z",
+    "cpu_percent": 36.4,
+    "memory_percent": 49.6,
+    "request_rate": 1572,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 58
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:57:00Z",
+    "cpu_percent": 42.1,
+    "memory_percent": 52.3,
+    "request_rate": 295,
+    "error_rate": 0.0047,
+    "p95_latency_ms": 141
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:57:00Z",
+    "cpu_percent": 30.0,
+    "memory_percent": 44.9,
+    "request_rate": 195,
+    "error_rate": 0.0031,
+    "p95_latency_ms": 86
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:57:00Z",
+    "cpu_percent": 49.5,
+    "memory_percent": 60.3,
+    "request_rate": 1176,
+    "error_rate": 0.0101,
+    "p95_latency_ms": 169
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:57:00Z",
+    "cpu_percent": 44.8,
+    "memory_percent": 58.9,
+    "request_rate": 353,
+    "error_rate": 0.0241,
+    "p95_latency_ms": 1618
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:57:00Z",
+    "cpu_percent": 43.0,
+    "memory_percent": 71.0,
+    "request_rate": 4110,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:57:00Z",
+    "cpu_percent": 38.5,
+    "memory_percent": 50.3,
+    "request_rate": 431,
+    "error_rate": 0.4585,
+    "p95_latency_ms": 10565
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:57:00Z",
+    "cpu_percent": 59.9,
+    "memory_percent": 54.1,
+    "request_rate": 923,
+    "error_rate": 0.1877,
+    "p95_latency_ms": 621
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:58:00Z",
+    "cpu_percent": 82.7,
+    "memory_percent": 47.4,
+    "request_rate": 16365,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 1269
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:58:00Z",
+    "cpu_percent": 35.2,
+    "memory_percent": 50.4,
+    "request_rate": 1537,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 61
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:58:00Z",
+    "cpu_percent": 42.1,
+    "memory_percent": 52.5,
+    "request_rate": 292,
+    "error_rate": 0.0046,
+    "p95_latency_ms": 132
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:58:00Z",
+    "cpu_percent": 29.8,
+    "memory_percent": 44.6,
+    "request_rate": 204,
+    "error_rate": 0.003,
+    "p95_latency_ms": 92
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:58:00Z",
+    "cpu_percent": 47.2,
+    "memory_percent": 59.8,
+    "request_rate": 1210,
+    "error_rate": 0.0102,
+    "p95_latency_ms": 179
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:58:00Z",
+    "cpu_percent": 44.1,
+    "memory_percent": 57.0,
+    "request_rate": 365,
+    "error_rate": 0.0257,
+    "p95_latency_ms": 1812
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:58:00Z",
+    "cpu_percent": 42.7,
+    "memory_percent": 71.0,
+    "request_rate": 4286,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:58:00Z",
+    "cpu_percent": 38.6,
+    "memory_percent": 49.2,
+    "request_rate": 434,
+    "error_rate": 0.4652,
+    "p95_latency_ms": 10364
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:58:00Z",
+    "cpu_percent": 59.9,
+    "memory_percent": 55.1,
+    "request_rate": 879,
+    "error_rate": 0.1907,
+    "p95_latency_ms": 644
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T09:59:00Z",
+    "cpu_percent": 80.9,
+    "memory_percent": 48.6,
+    "request_rate": 14848,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 1220
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T09:59:00Z",
+    "cpu_percent": 35.0,
+    "memory_percent": 50.8,
+    "request_rate": 1468,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 61
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T09:59:00Z",
+    "cpu_percent": 41.3,
+    "memory_percent": 52.4,
+    "request_rate": 301,
+    "error_rate": 0.005,
+    "p95_latency_ms": 145
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T09:59:00Z",
+    "cpu_percent": 28.9,
+    "memory_percent": 44.8,
+    "request_rate": 202,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 88
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T09:59:00Z",
+    "cpu_percent": 47.8,
+    "memory_percent": 59.3,
+    "request_rate": 1197,
+    "error_rate": 0.0106,
+    "p95_latency_ms": 186
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T09:59:00Z",
+    "cpu_percent": 45.2,
+    "memory_percent": 57.0,
+    "request_rate": 355,
+    "error_rate": 0.0254,
+    "p95_latency_ms": 1782
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T09:59:00Z",
+    "cpu_percent": 40.3,
+    "memory_percent": 70.8,
+    "request_rate": 4097,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T09:59:00Z",
+    "cpu_percent": 38.7,
+    "memory_percent": 49.6,
+    "request_rate": 432,
+    "error_rate": 0.4144,
+    "p95_latency_ms": 9965
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T09:59:00Z",
+    "cpu_percent": 58.6,
+    "memory_percent": 55.1,
+    "request_rate": 921,
+    "error_rate": 0.1714,
+    "p95_latency_ms": 635
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:00:00Z",
+    "cpu_percent": 84.1,
+    "memory_percent": 47.7,
+    "request_rate": 9156,
+    "error_rate": 0.0022,
+    "p95_latency_ms": 404
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:00:00Z",
+    "cpu_percent": 34.6,
+    "memory_percent": 50.3,
+    "request_rate": 1518,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 62
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:00:00Z",
+    "cpu_percent": 63.7,
+    "memory_percent": 51.7,
+    "request_rate": 293,
+    "error_rate": 0.0214,
+    "p95_latency_ms": 226
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:00:00Z",
+    "cpu_percent": 29.3,
+    "memory_percent": 44.3,
+    "request_rate": 195,
+    "error_rate": 0.0029,
+    "p95_latency_ms": 85
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:00:00Z",
+    "cpu_percent": 46.7,
+    "memory_percent": 59.0,
+    "request_rate": 1202,
+    "error_rate": 0.0102,
+    "p95_latency_ms": 176
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:00:00Z",
+    "cpu_percent": 46.2,
+    "memory_percent": 57.5,
+    "request_rate": 367,
+    "error_rate": 0.0272,
+    "p95_latency_ms": 2038
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:00:00Z",
+    "cpu_percent": 42.2,
+    "memory_percent": 72.7,
+    "request_rate": 4212,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:00:00Z",
+    "cpu_percent": 37.6,
+    "memory_percent": 49.5,
+    "request_rate": 433,
+    "error_rate": 0.4275,
+    "p95_latency_ms": 10137
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:00:00Z",
+    "cpu_percent": 62.4,
+    "memory_percent": 55.3,
+    "request_rate": 894,
+    "error_rate": 0.1805,
+    "p95_latency_ms": 620
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:01:00Z",
+    "cpu_percent": 51.2,
+    "memory_percent": 48.4,
+    "request_rate": 5298,
+    "error_rate": 0.0018,
+    "p95_latency_ms": 90
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:01:00Z",
+    "cpu_percent": 35.4,
+    "memory_percent": 50.7,
+    "request_rate": 1519,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 61
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:01:00Z",
+    "cpu_percent": 63.0,
+    "memory_percent": 52.6,
+    "request_rate": 298,
+    "error_rate": 0.0626,
+    "p95_latency_ms": 418
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:01:00Z",
+    "cpu_percent": 30.6,
+    "memory_percent": 44.4,
+    "request_rate": 198,
+    "error_rate": 0.0031,
+    "p95_latency_ms": 90
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:01:00Z",
+    "cpu_percent": 49.2,
+    "memory_percent": 60.6,
+    "request_rate": 1221,
+    "error_rate": 0.0191,
+    "p95_latency_ms": 251
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:01:00Z",
+    "cpu_percent": 46.8,
+    "memory_percent": 58.7,
+    "request_rate": 340,
+    "error_rate": 0.0307,
+    "p95_latency_ms": 2078
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:01:00Z",
+    "cpu_percent": 41.3,
+    "memory_percent": 71.4,
+    "request_rate": 4010,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:01:00Z",
+    "cpu_percent": 38.2,
+    "memory_percent": 49.8,
+    "request_rate": 429,
+    "error_rate": 0.4395,
+    "p95_latency_ms": 9702
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:01:00Z",
+    "cpu_percent": 58.7,
+    "memory_percent": 54.6,
+    "request_rate": 908,
+    "error_rate": 0.1722,
+    "p95_latency_ms": 628
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:02:00Z",
+    "cpu_percent": 51.9,
+    "memory_percent": 48.5,
+    "request_rate": 5344,
+    "error_rate": 0.002,
+    "p95_latency_ms": 92
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:02:00Z",
+    "cpu_percent": 34.5,
+    "memory_percent": 49.9,
+    "request_rate": 1512,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 57
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:02:00Z",
+    "cpu_percent": 62.5,
+    "memory_percent": 51.4,
+    "request_rate": 288,
+    "error_rate": 0.111,
+    "p95_latency_ms": 658
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:02:00Z",
+    "cpu_percent": 30.8,
+    "memory_percent": 45.6,
+    "request_rate": 191,
+    "error_rate": 0.0032,
+    "p95_latency_ms": 85
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:02:00Z",
+    "cpu_percent": 46.2,
+    "memory_percent": 59.4,
+    "request_rate": 1197,
+    "error_rate": 0.0845,
+    "p95_latency_ms": 569
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:02:00Z",
+    "cpu_percent": 46.6,
+    "memory_percent": 58.8,
+    "request_rate": 367,
+    "error_rate": 0.0312,
+    "p95_latency_ms": 2237
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:02:00Z",
+    "cpu_percent": 43.0,
+    "memory_percent": 71.9,
+    "request_rate": 4037,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:02:00Z",
+    "cpu_percent": 38.3,
+    "memory_percent": 49.6,
+    "request_rate": 445,
+    "error_rate": 0.435,
+    "p95_latency_ms": 10063
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:02:00Z",
+    "cpu_percent": 57.9,
+    "memory_percent": 55.3,
+    "request_rate": 876,
+    "error_rate": 0.1917,
+    "p95_latency_ms": 678
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:03:00Z",
+    "cpu_percent": 50.3,
+    "memory_percent": 47.4,
+    "request_rate": 5267,
+    "error_rate": 0.002,
+    "p95_latency_ms": 94
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:03:00Z",
+    "cpu_percent": 34.4,
+    "memory_percent": 50.5,
+    "request_rate": 1451,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 60
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:03:00Z",
+    "cpu_percent": 66.1,
+    "memory_percent": 51.1,
+    "request_rate": 307,
+    "error_rate": 0.1772,
+    "p95_latency_ms": 794
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:03:00Z",
+    "cpu_percent": 28.8,
+    "memory_percent": 45.8,
+    "request_rate": 207,
+    "error_rate": 0.003,
+    "p95_latency_ms": 91
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:03:00Z",
+    "cpu_percent": 47.7,
+    "memory_percent": 60.3,
+    "request_rate": 1163,
+    "error_rate": 0.2166,
+    "p95_latency_ms": 1199
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:03:00Z",
+    "cpu_percent": 47.6,
+    "memory_percent": 58.6,
+    "request_rate": 366,
+    "error_rate": 0.0322,
+    "p95_latency_ms": 2240
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:03:00Z",
+    "cpu_percent": 42.3,
+    "memory_percent": 70.6,
+    "request_rate": 4206,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:03:00Z",
+    "cpu_percent": 36.7,
+    "memory_percent": 50.8,
+    "request_rate": 468,
+    "error_rate": 0.4844,
+    "p95_latency_ms": 10288
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:03:00Z",
+    "cpu_percent": 57.9,
+    "memory_percent": 54.4,
+    "request_rate": 915,
+    "error_rate": 0.1718,
+    "p95_latency_ms": 621
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:04:00Z",
+    "cpu_percent": 48.6,
+    "memory_percent": 48.3,
+    "request_rate": 4956,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 86
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:04:00Z",
+    "cpu_percent": 36.3,
+    "memory_percent": 50.1,
+    "request_rate": 1562,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 58
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:04:00Z",
+    "cpu_percent": 63.5,
+    "memory_percent": 52.8,
+    "request_rate": 287,
+    "error_rate": 0.2201,
+    "p95_latency_ms": 877
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:04:00Z",
+    "cpu_percent": 30.5,
+    "memory_percent": 44.9,
+    "request_rate": 192,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 88
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:04:00Z",
+    "cpu_percent": 47.0,
+    "memory_percent": 60.4,
+    "request_rate": 1141,
+    "error_rate": 0.3641,
+    "p95_latency_ms": 1755
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:04:00Z",
+    "cpu_percent": 48.2,
+    "memory_percent": 57.2,
+    "request_rate": 339,
+    "error_rate": 0.033,
+    "p95_latency_ms": 2290
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:04:00Z",
+    "cpu_percent": 40.8,
+    "memory_percent": 71.8,
+    "request_rate": 4248,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:04:00Z",
+    "cpu_percent": 37.0,
+    "memory_percent": 49.8,
+    "request_rate": 434,
+    "error_rate": 0.4357,
+    "p95_latency_ms": 10192
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:04:00Z",
+    "cpu_percent": 62.1,
+    "memory_percent": 55.2,
+    "request_rate": 898,
+    "error_rate": 0.1882,
+    "p95_latency_ms": 674
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:05:00Z",
+    "cpu_percent": 48.1,
+    "memory_percent": 47.6,
+    "request_rate": 5019,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 89
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:05:00Z",
+    "cpu_percent": 35.9,
+    "memory_percent": 50.0,
+    "request_rate": 1546,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 59
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:05:00Z",
+    "cpu_percent": 80.0,
+    "memory_percent": 52.5,
+    "request_rate": 295,
+    "error_rate": 0.2234,
+    "p95_latency_ms": 919
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:05:00Z",
+    "cpu_percent": 30.7,
+    "memory_percent": 45.2,
+    "request_rate": 207,
+    "error_rate": 0.0032,
+    "p95_latency_ms": 86
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:05:00Z",
+    "cpu_percent": 68.8,
+    "memory_percent": 67.8,
+    "request_rate": 1161,
+    "error_rate": 0.3971,
+    "p95_latency_ms": 1804
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:05:00Z",
+    "cpu_percent": 47.8,
+    "memory_percent": 58.2,
+    "request_rate": 343,
+    "error_rate": 0.0354,
+    "p95_latency_ms": 2613
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:05:00Z",
+    "cpu_percent": 41.7,
+    "memory_percent": 72.5,
+    "request_rate": 4026,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:05:00Z",
+    "cpu_percent": 36.7,
+    "memory_percent": 49.9,
+    "request_rate": 446,
+    "error_rate": 0.4489,
+    "p95_latency_ms": 9682
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:05:00Z",
+    "cpu_percent": 58.5,
+    "memory_percent": 54.1,
+    "request_rate": 894,
+    "error_rate": 0.1778,
+    "p95_latency_ms": 647
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:06:00Z",
+    "cpu_percent": 51.1,
+    "memory_percent": 48.8,
+    "request_rate": 5394,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 85
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:06:00Z",
+    "cpu_percent": 33.9,
+    "memory_percent": 50.9,
+    "request_rate": 1446,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 63
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:06:00Z",
+    "cpu_percent": 76.9,
+    "memory_percent": 51.6,
+    "request_rate": 289,
+    "error_rate": 0.2256,
+    "p95_latency_ms": 870
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:06:00Z",
+    "cpu_percent": 30.8,
+    "memory_percent": 44.5,
+    "request_rate": 202,
+    "error_rate": 0.003,
+    "p95_latency_ms": 89
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:06:00Z",
+    "cpu_percent": 68.4,
+    "memory_percent": 67.3,
+    "request_rate": 1242,
+    "error_rate": 0.3674,
+    "p95_latency_ms": 1865
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:06:00Z",
+    "cpu_percent": 49.2,
+    "memory_percent": 57.9,
+    "request_rate": 357,
+    "error_rate": 0.0412,
+    "p95_latency_ms": 2757
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:06:00Z",
+    "cpu_percent": 40.5,
+    "memory_percent": 72.1,
+    "request_rate": 4203,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:06:00Z",
+    "cpu_percent": 37.2,
+    "memory_percent": 49.5,
+    "request_rate": 456,
+    "error_rate": 0.4568,
+    "p95_latency_ms": 9827
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:06:00Z",
+    "cpu_percent": 61.1,
+    "memory_percent": 55.4,
+    "request_rate": 944,
+    "error_rate": 0.1684,
+    "p95_latency_ms": 642
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:07:00Z",
+    "cpu_percent": 48.6,
+    "memory_percent": 47.4,
+    "request_rate": 5109,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 90
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:07:00Z",
+    "cpu_percent": 35.6,
+    "memory_percent": 51.0,
+    "request_rate": 1570,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 59
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:07:00Z",
+    "cpu_percent": 76.8,
+    "memory_percent": 51.1,
+    "request_rate": 313,
+    "error_rate": 0.2334,
+    "p95_latency_ms": 944
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:07:00Z",
+    "cpu_percent": 29.5,
+    "memory_percent": 44.7,
+    "request_rate": 197,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 90
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:07:00Z",
+    "cpu_percent": 72.0,
+    "memory_percent": 69.3,
+    "request_rate": 1211,
+    "error_rate": 0.3966,
+    "p95_latency_ms": 1885
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:07:00Z",
+    "cpu_percent": 49.3,
+    "memory_percent": 58.4,
+    "request_rate": 365,
+    "error_rate": 0.0397,
+    "p95_latency_ms": 2795
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:07:00Z",
+    "cpu_percent": 42.2,
+    "memory_percent": 71.7,
+    "request_rate": 4187,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:07:00Z",
+    "cpu_percent": 36.8,
+    "memory_percent": 49.6,
+    "request_rate": 470,
+    "error_rate": 0.4379,
+    "p95_latency_ms": 10347
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:07:00Z",
+    "cpu_percent": 59.2,
+    "memory_percent": 55.8,
+    "request_rate": 877,
+    "error_rate": 0.1711,
+    "p95_latency_ms": 646
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:08:00Z",
+    "cpu_percent": 49.3,
+    "memory_percent": 47.4,
+    "request_rate": 5414,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 88
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:08:00Z",
+    "cpu_percent": 35.8,
+    "memory_percent": 49.0,
+    "request_rate": 1505,
+    "error_rate": 0.002,
+    "p95_latency_ms": 61
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:08:00Z",
+    "cpu_percent": 78.8,
+    "memory_percent": 51.8,
+    "request_rate": 300,
+    "error_rate": 0.2366,
+    "p95_latency_ms": 948
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:08:00Z",
+    "cpu_percent": 29.1,
+    "memory_percent": 45.0,
+    "request_rate": 208,
+    "error_rate": 0.0029,
+    "p95_latency_ms": 92
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:08:00Z",
+    "cpu_percent": 71.6,
+    "memory_percent": 68.6,
+    "request_rate": 1201,
+    "error_rate": 0.3896,
+    "p95_latency_ms": 1810
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:08:00Z",
+    "cpu_percent": 49.8,
+    "memory_percent": 58.9,
+    "request_rate": 361,
+    "error_rate": 0.0389,
+    "p95_latency_ms": 2779
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:08:00Z",
+    "cpu_percent": 43.6,
+    "memory_percent": 71.3,
+    "request_rate": 3997,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:08:00Z",
+    "cpu_percent": 38.9,
+    "memory_percent": 49.7,
+    "request_rate": 443,
+    "error_rate": 0.4727,
+    "p95_latency_ms": 10640
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:08:00Z",
+    "cpu_percent": 59.6,
+    "memory_percent": 54.5,
+    "request_rate": 877,
+    "error_rate": 0.1922,
+    "p95_latency_ms": 646
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:09:00Z",
+    "cpu_percent": 51.1,
+    "memory_percent": 48.4,
+    "request_rate": 5275,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 91
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:09:00Z",
+    "cpu_percent": 35.5,
+    "memory_percent": 50.2,
+    "request_rate": 1548,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 57
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:09:00Z",
+    "cpu_percent": 79.1,
+    "memory_percent": 52.6,
+    "request_rate": 295,
+    "error_rate": 0.2171,
+    "p95_latency_ms": 862
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:09:00Z",
+    "cpu_percent": 30.8,
+    "memory_percent": 45.6,
+    "request_rate": 195,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 87
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:09:00Z",
+    "cpu_percent": 73.3,
+    "memory_percent": 68.7,
+    "request_rate": 1197,
+    "error_rate": 0.3557,
+    "p95_latency_ms": 1745
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:09:00Z",
+    "cpu_percent": 48.8,
+    "memory_percent": 58.6,
+    "request_rate": 352,
+    "error_rate": 0.0419,
+    "p95_latency_ms": 2874
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:09:00Z",
+    "cpu_percent": 41.5,
+    "memory_percent": 72.7,
+    "request_rate": 4254,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:09:00Z",
+    "cpu_percent": 39.4,
+    "memory_percent": 49.3,
+    "request_rate": 442,
+    "error_rate": 0.4822,
+    "p95_latency_ms": 9834
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:09:00Z",
+    "cpu_percent": 61.7,
+    "memory_percent": 55.1,
+    "request_rate": 860,
+    "error_rate": 0.1944,
+    "p95_latency_ms": 676
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:10:00Z",
+    "cpu_percent": 48.8,
+    "memory_percent": 47.5,
+    "request_rate": 5230,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 95
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:10:00Z",
+    "cpu_percent": 34.3,
+    "memory_percent": 49.1,
+    "request_rate": 1558,
+    "error_rate": 0.002,
+    "p95_latency_ms": 63
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:10:00Z",
+    "cpu_percent": 77.2,
+    "memory_percent": 52.5,
+    "request_rate": 299,
+    "error_rate": 0.2323,
+    "p95_latency_ms": 878
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:10:00Z",
+    "cpu_percent": 30.2,
+    "memory_percent": 45.5,
+    "request_rate": 203,
+    "error_rate": 0.0028,
+    "p95_latency_ms": 93
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:10:00Z",
+    "cpu_percent": 71.8,
+    "memory_percent": 68.7,
+    "request_rate": 1203,
+    "error_rate": 0.3775,
+    "p95_latency_ms": 1751
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:10:00Z",
+    "cpu_percent": 50.8,
+    "memory_percent": 58.5,
+    "request_rate": 365,
+    "error_rate": 0.045,
+    "p95_latency_ms": 3123
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:10:00Z",
+    "cpu_percent": 42.8,
+    "memory_percent": 71.5,
+    "request_rate": 4009,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:10:00Z",
+    "cpu_percent": 37.4,
+    "memory_percent": 50.9,
+    "request_rate": 471,
+    "error_rate": 0.435,
+    "p95_latency_ms": 10439
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:10:00Z",
+    "cpu_percent": 62.3,
+    "memory_percent": 55.9,
+    "request_rate": 931,
+    "error_rate": 0.1704,
+    "p95_latency_ms": 649
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:11:00Z",
+    "cpu_percent": 49.2,
+    "memory_percent": 47.6,
+    "request_rate": 5048,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 88
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:11:00Z",
+    "cpu_percent": 34.2,
+    "memory_percent": 49.1,
+    "request_rate": 1549,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 59
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:11:00Z",
+    "cpu_percent": 79.3,
+    "memory_percent": 52.6,
+    "request_rate": 312,
+    "error_rate": 0.2222,
+    "p95_latency_ms": 951
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:11:00Z",
+    "cpu_percent": 30.0,
+    "memory_percent": 45.5,
+    "request_rate": 205,
+    "error_rate": 0.003,
+    "p95_latency_ms": 95
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:11:00Z",
+    "cpu_percent": 68.6,
+    "memory_percent": 67.4,
+    "request_rate": 1173,
+    "error_rate": 0.3593,
+    "p95_latency_ms": 1809
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:11:00Z",
+    "cpu_percent": 48.7,
+    "memory_percent": 56.9,
+    "request_rate": 348,
+    "error_rate": 0.0453,
+    "p95_latency_ms": 3143
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:11:00Z",
+    "cpu_percent": 43.1,
+    "memory_percent": 71.1,
+    "request_rate": 4317,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:11:00Z",
+    "cpu_percent": 38.0,
+    "memory_percent": 50.2,
+    "request_rate": 438,
+    "error_rate": 0.4411,
+    "p95_latency_ms": 10587
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:11:00Z",
+    "cpu_percent": 58.6,
+    "memory_percent": 54.8,
+    "request_rate": 860,
+    "error_rate": 0.1765,
+    "p95_latency_ms": 688
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:12:00Z",
+    "cpu_percent": 49.4,
+    "memory_percent": 48.8,
+    "request_rate": 5354,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 86
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:12:00Z",
+    "cpu_percent": 34.7,
+    "memory_percent": 49.3,
+    "request_rate": 1567,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 60
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:12:00Z",
+    "cpu_percent": 78.4,
+    "memory_percent": 51.2,
+    "request_rate": 292,
+    "error_rate": 0.2096,
+    "p95_latency_ms": 916
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:12:00Z",
+    "cpu_percent": 30.2,
+    "memory_percent": 45.2,
+    "request_rate": 202,
+    "error_rate": 0.0032,
+    "p95_latency_ms": 91
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:12:00Z",
+    "cpu_percent": 68.9,
+    "memory_percent": 67.3,
+    "request_rate": 1223,
+    "error_rate": 0.3822,
+    "p95_latency_ms": 1706
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:12:00Z",
+    "cpu_percent": 49.1,
+    "memory_percent": 59.1,
+    "request_rate": 362,
+    "error_rate": 0.0488,
+    "p95_latency_ms": 3536
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:12:00Z",
+    "cpu_percent": 42.7,
+    "memory_percent": 72.4,
+    "request_rate": 4331,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:12:00Z",
+    "cpu_percent": 37.7,
+    "memory_percent": 49.2,
+    "request_rate": 453,
+    "error_rate": 0.4566,
+    "p95_latency_ms": 10256
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:12:00Z",
+    "cpu_percent": 58.9,
+    "memory_percent": 55.6,
+    "request_rate": 896,
+    "error_rate": 0.1778,
+    "p95_latency_ms": 686
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:13:00Z",
+    "cpu_percent": 50.7,
+    "memory_percent": 47.8,
+    "request_rate": 5450,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 95
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:13:00Z",
+    "cpu_percent": 33.9,
+    "memory_percent": 50.8,
+    "request_rate": 1445,
+    "error_rate": 0.002,
+    "p95_latency_ms": 61
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:13:00Z",
+    "cpu_percent": 80.6,
+    "memory_percent": 52.7,
+    "request_rate": 288,
+    "error_rate": 0.2279,
+    "p95_latency_ms": 867
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:13:00Z",
+    "cpu_percent": 29.2,
+    "memory_percent": 44.2,
+    "request_rate": 199,
+    "error_rate": 0.0029,
+    "p95_latency_ms": 88
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:13:00Z",
+    "cpu_percent": 70.5,
+    "memory_percent": 68.1,
+    "request_rate": 1190,
+    "error_rate": 0.3526,
+    "p95_latency_ms": 1783
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:13:00Z",
+    "cpu_percent": 53.2,
+    "memory_percent": 58.4,
+    "request_rate": 342,
+    "error_rate": 0.0461,
+    "p95_latency_ms": 3577
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:13:00Z",
+    "cpu_percent": 42.9,
+    "memory_percent": 71.9,
+    "request_rate": 4113,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:13:00Z",
+    "cpu_percent": 38.6,
+    "memory_percent": 50.1,
+    "request_rate": 470,
+    "error_rate": 0.4472,
+    "p95_latency_ms": 10455
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:13:00Z",
+    "cpu_percent": 62.4,
+    "memory_percent": 55.1,
+    "request_rate": 920,
+    "error_rate": 0.1701,
+    "p95_latency_ms": 634
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:14:00Z",
+    "cpu_percent": 51.2,
+    "memory_percent": 47.6,
+    "request_rate": 5090,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 88
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:14:00Z",
+    "cpu_percent": 35.7,
+    "memory_percent": 50.9,
+    "request_rate": 1488,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 58
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:14:00Z",
+    "cpu_percent": 76.6,
+    "memory_percent": 52.4,
+    "request_rate": 303,
+    "error_rate": 0.2332,
+    "p95_latency_ms": 866
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:14:00Z",
+    "cpu_percent": 28.9,
+    "memory_percent": 45.0,
+    "request_rate": 196,
+    "error_rate": 0.003,
+    "p95_latency_ms": 85
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:14:00Z",
+    "cpu_percent": 73.3,
+    "memory_percent": 68.2,
+    "request_rate": 1223,
+    "error_rate": 0.3911,
+    "p95_latency_ms": 1857
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:14:00Z",
+    "cpu_percent": 51.5,
+    "memory_percent": 58.4,
+    "request_rate": 365,
+    "error_rate": 0.0488,
+    "p95_latency_ms": 3622
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:14:00Z",
+    "cpu_percent": 41.0,
+    "memory_percent": 70.7,
+    "request_rate": 4382,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:14:00Z",
+    "cpu_percent": 37.8,
+    "memory_percent": 49.6,
+    "request_rate": 459,
+    "error_rate": 0.473,
+    "p95_latency_ms": 10562
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:14:00Z",
+    "cpu_percent": 62.2,
+    "memory_percent": 55.2,
+    "request_rate": 904,
+    "error_rate": 0.1871,
+    "p95_latency_ms": 615
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:15:00Z",
+    "cpu_percent": 49.8,
+    "memory_percent": 47.5,
+    "request_rate": 5189,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 90
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:15:00Z",
+    "cpu_percent": 34.8,
+    "memory_percent": 49.2,
+    "request_rate": 1498,
+    "error_rate": 0.002,
+    "p95_latency_ms": 63
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:15:00Z",
+    "cpu_percent": 79.6,
+    "memory_percent": 52.5,
+    "request_rate": 302,
+    "error_rate": 0.2193,
+    "p95_latency_ms": 940
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:15:00Z",
+    "cpu_percent": 30.8,
+    "memory_percent": 44.2,
+    "request_rate": 207,
+    "error_rate": 0.0032,
+    "p95_latency_ms": 91
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:15:00Z",
+    "cpu_percent": 70.3,
+    "memory_percent": 66.7,
+    "request_rate": 1182,
+    "error_rate": 0.385,
+    "p95_latency_ms": 1876
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:15:00Z",
+    "cpu_percent": 52.6,
+    "memory_percent": 58.0,
+    "request_rate": 336,
+    "error_rate": 0.0517,
+    "p95_latency_ms": 3626
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:15:00Z",
+    "cpu_percent": 43.6,
+    "memory_percent": 72.1,
+    "request_rate": 4096,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:15:00Z",
+    "cpu_percent": 37.7,
+    "memory_percent": 50.0,
+    "request_rate": 456,
+    "error_rate": 0.4314,
+    "p95_latency_ms": 10394
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:15:00Z",
+    "cpu_percent": 60.4,
+    "memory_percent": 55.0,
+    "request_rate": 932,
+    "error_rate": 0.1701,
+    "p95_latency_ms": 686
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:16:00Z",
+    "cpu_percent": 51.7,
+    "memory_percent": 48.4,
+    "request_rate": 5011,
+    "error_rate": 0.002,
+    "p95_latency_ms": 91
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:16:00Z",
+    "cpu_percent": 33.7,
+    "memory_percent": 49.7,
+    "request_rate": 1492,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 63
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:16:00Z",
+    "cpu_percent": 77.0,
+    "memory_percent": 53.0,
+    "request_rate": 285,
+    "error_rate": 0.2354,
+    "p95_latency_ms": 950
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:16:00Z",
+    "cpu_percent": 30.0,
+    "memory_percent": 44.9,
+    "request_rate": 201,
+    "error_rate": 0.0031,
+    "p95_latency_ms": 94
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:16:00Z",
+    "cpu_percent": 73.6,
+    "memory_percent": 67.8,
+    "request_rate": 1230,
+    "error_rate": 0.3727,
+    "p95_latency_ms": 1822
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:16:00Z",
+    "cpu_percent": 53.1,
+    "memory_percent": 58.8,
+    "request_rate": 344,
+    "error_rate": 0.0563,
+    "p95_latency_ms": 3718
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:16:00Z",
+    "cpu_percent": 41.0,
+    "memory_percent": 71.6,
+    "request_rate": 4318,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:16:00Z",
+    "cpu_percent": 38.7,
+    "memory_percent": 50.6,
+    "request_rate": 431,
+    "error_rate": 0.4853,
+    "p95_latency_ms": 10175
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:16:00Z",
+    "cpu_percent": 58.0,
+    "memory_percent": 54.3,
+    "request_rate": 909,
+    "error_rate": 0.185,
+    "p95_latency_ms": 629
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:17:00Z",
+    "cpu_percent": 49.0,
+    "memory_percent": 48.3,
+    "request_rate": 5216,
+    "error_rate": 0.002,
+    "p95_latency_ms": 85
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:17:00Z",
+    "cpu_percent": 33.9,
+    "memory_percent": 50.4,
+    "request_rate": 1507,
+    "error_rate": 0.0022,
+    "p95_latency_ms": 59
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:17:00Z",
+    "cpu_percent": 75.6,
+    "memory_percent": 53.0,
+    "request_rate": 299,
+    "error_rate": 0.2109,
+    "p95_latency_ms": 911
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:17:00Z",
+    "cpu_percent": 29.9,
+    "memory_percent": 45.6,
+    "request_rate": 203,
+    "error_rate": 0.0029,
+    "p95_latency_ms": 90
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:17:00Z",
+    "cpu_percent": 69.4,
+    "memory_percent": 67.2,
+    "request_rate": 1192,
+    "error_rate": 0.3421,
+    "p95_latency_ms": 1765
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:17:00Z",
+    "cpu_percent": 54.7,
+    "memory_percent": 58.7,
+    "request_rate": 352,
+    "error_rate": 0.0558,
+    "p95_latency_ms": 3843
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:17:00Z",
+    "cpu_percent": 41.4,
+    "memory_percent": 70.9,
+    "request_rate": 4145,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:17:00Z",
+    "cpu_percent": 37.7,
+    "memory_percent": 50.0,
+    "request_rate": 469,
+    "error_rate": 0.4638,
+    "p95_latency_ms": 10253
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:17:00Z",
+    "cpu_percent": 58.2,
+    "memory_percent": 55.9,
+    "request_rate": 877,
+    "error_rate": 0.1827,
+    "p95_latency_ms": 659
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:18:00Z",
+    "cpu_percent": 49.7,
+    "memory_percent": 48.4,
+    "request_rate": 4992,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 85
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:18:00Z",
+    "cpu_percent": 34.7,
+    "memory_percent": 49.4,
+    "request_rate": 1443,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 60
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:18:00Z",
+    "cpu_percent": 76.2,
+    "memory_percent": 52.9,
+    "request_rate": 302,
+    "error_rate": 0.2297,
+    "p95_latency_ms": 887
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:18:00Z",
+    "cpu_percent": 29.2,
+    "memory_percent": 44.2,
+    "request_rate": 192,
+    "error_rate": 0.0032,
+    "p95_latency_ms": 88
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:18:00Z",
+    "cpu_percent": 72.0,
+    "memory_percent": 67.7,
+    "request_rate": 1160,
+    "error_rate": 0.3681,
+    "p95_latency_ms": 1720
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:18:00Z",
+    "cpu_percent": 52.4,
+    "memory_percent": 59.1,
+    "request_rate": 347,
+    "error_rate": 0.0579,
+    "p95_latency_ms": 4282
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:18:00Z",
+    "cpu_percent": 42.8,
+    "memory_percent": 73.1,
+    "request_rate": 4152,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:18:00Z",
+    "cpu_percent": 38.9,
+    "memory_percent": 49.7,
+    "request_rate": 468,
+    "error_rate": 0.4527,
+    "p95_latency_ms": 10369
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:18:00Z",
+    "cpu_percent": 59.6,
+    "memory_percent": 55.2,
+    "request_rate": 902,
+    "error_rate": 0.1925,
+    "p95_latency_ms": 627
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:19:00Z",
+    "cpu_percent": 50.2,
+    "memory_percent": 48.8,
+    "request_rate": 5152,
+    "error_rate": 0.0021,
+    "p95_latency_ms": 94
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:19:00Z",
+    "cpu_percent": 35.5,
+    "memory_percent": 50.3,
+    "request_rate": 1515,
+    "error_rate": 0.0018,
+    "p95_latency_ms": 62
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:19:00Z",
+    "cpu_percent": 78.2,
+    "memory_percent": 51.7,
+    "request_rate": 293,
+    "error_rate": 0.2205,
+    "p95_latency_ms": 900
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:19:00Z",
+    "cpu_percent": 30.5,
+    "memory_percent": 45.0,
+    "request_rate": 193,
+    "error_rate": 0.0029,
+    "p95_latency_ms": 89
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:19:00Z",
+    "cpu_percent": 71.7,
+    "memory_percent": 66.7,
+    "request_rate": 1187,
+    "error_rate": 0.3738,
+    "p95_latency_ms": 1698
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:19:00Z",
+    "cpu_percent": 54.3,
+    "memory_percent": 58.1,
+    "request_rate": 347,
+    "error_rate": 0.0564,
+    "p95_latency_ms": 4091
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:19:00Z",
+    "cpu_percent": 42.0,
+    "memory_percent": 72.0,
+    "request_rate": 4378,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:19:00Z",
+    "cpu_percent": 36.7,
+    "memory_percent": 50.5,
+    "request_rate": 457,
+    "error_rate": 0.4396,
+    "p95_latency_ms": 10380
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:19:00Z",
+    "cpu_percent": 61.0,
+    "memory_percent": 54.4,
+    "request_rate": 891,
+    "error_rate": 0.1849,
+    "p95_latency_ms": 634
+  },
+  {
+    "service": "api-gateway",
+    "timestamp": "2026-09-30T10:20:00Z",
+    "cpu_percent": 49.9,
+    "memory_percent": 47.4,
+    "request_rate": 5441,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 92
+  },
+  {
+    "service": "auth-service",
+    "timestamp": "2026-09-30T10:20:00Z",
+    "cpu_percent": 34.3,
+    "memory_percent": 49.3,
+    "request_rate": 1510,
+    "error_rate": 0.0019,
+    "p95_latency_ms": 62
+  },
+  {
+    "service": "inventory-api",
+    "timestamp": "2026-09-30T10:20:00Z",
+    "cpu_percent": 75.5,
+    "memory_percent": 53.0,
+    "request_rate": 299,
+    "error_rate": 0.232,
+    "p95_latency_ms": 945
+  },
+  {
+    "service": "notification-service",
+    "timestamp": "2026-09-30T10:20:00Z",
+    "cpu_percent": 29.9,
+    "memory_percent": 45.0,
+    "request_rate": 193,
+    "error_rate": 0.0029,
+    "p95_latency_ms": 88
+  },
+  {
+    "service": "orders-api",
+    "timestamp": "2026-09-30T10:20:00Z",
+    "cpu_percent": 71.8,
+    "memory_percent": 67.0,
+    "request_rate": 1195,
+    "error_rate": 0.3434,
+    "p95_latency_ms": 1774
+  },
+  {
+    "service": "payments-api",
+    "timestamp": "2026-09-30T10:20:00Z",
+    "cpu_percent": 55.1,
+    "memory_percent": 58.3,
+    "request_rate": 359,
+    "error_rate": 0.0572,
+    "p95_latency_ms": 4300
+  },
+  {
+    "service": "postgres-db",
+    "timestamp": "2026-09-30T10:20:00Z",
+    "cpu_percent": 43.0,
+    "memory_percent": 72.7,
+    "request_rate": 4023,
+    "error_rate": 0.0,
+    "p95_latency_ms": 8
+  },
+  {
+    "service": "search-api",
+    "timestamp": "2026-09-30T10:20:00Z",
+    "cpu_percent": 36.6,
+    "memory_percent": 51.0,
+    "request_rate": 458,
+    "error_rate": 0.4428,
+    "p95_latency_ms": 10509
+  },
+  {
+    "service": "users-api",
+    "timestamp": "2026-09-30T10:20:00Z",
+    "cpu_percent": 59.1,
+    "memory_percent": 55.6,
+    "request_rate": 862,
+    "error_rate": 0.1788,
+    "p95_latency_ms": 689
+  }
+]

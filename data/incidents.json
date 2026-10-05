@@ -1,0 +1,295 @@
+[
+  {
+    "incident_id": "INC-001",
+    "title": "orders-api returning HTTP 500",
+    "severity": "SEV-1",
+    "service": "orders-api",
+    "environment": "production",
+    "status": "investigating",
+    "started_at": "2026-09-30T10:02:00Z",
+    "detected_at": "2026-09-30T10:04:00Z",
+    "detected_by": "alert:ALT-3001",
+    "reporter": "pagerduty",
+    "description": "Orders API returning HTTP 500 errors to customers. Checkout conversion dropped sharply. Started roughly 10 minutes before this incident was opened.",
+    "root_cause": null,
+    "resolution": null,
+    "resolved_at": null,
+    "notes": [],
+    "timeline": [
+      {
+        "timestamp": "2026-09-30T10:04:00Z",
+        "event": "Alert HighErrorRate fired for orders-api"
+      },
+      {
+        "timestamp": "2026-09-30T10:04:30Z",
+        "event": "Incident INC-001 created automatically"
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-002",
+    "title": "payments-api latency increasing",
+    "severity": "SEV-2",
+    "service": "payments-api",
+    "environment": "production",
+    "status": "investigating",
+    "started_at": "2026-09-30T09:50:00Z",
+    "detected_at": "2026-09-30T09:53:00Z",
+    "detected_by": "alert:ALT-3002",
+    "reporter": "pagerduty",
+    "description": "p95 latency on payments-api has been climbing steadily for the last 30 minutes; some charge requests now time out with HTTP 504.",
+    "root_cause": null,
+    "resolution": null,
+    "resolved_at": null,
+    "notes": [],
+    "timeline": [
+      {
+        "timestamp": "2026-09-30T09:53:00Z",
+        "event": "Alert HighLatencyP95 fired for payments-api"
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-003",
+    "title": "users-api intermittently returning 503",
+    "severity": "SEV-2",
+    "service": "users-api",
+    "environment": "production",
+    "status": "investigating",
+    "started_at": "2026-09-30T09:52:00Z",
+    "detected_at": "2026-09-30T09:55:00Z",
+    "detected_by": "alert:ALT-3004",
+    "reporter": "pagerduty",
+    "description": "Roughly one in five requests to users-api fail with HTTP 503. Users are being logged out unexpectedly.",
+    "root_cause": null,
+    "resolution": null,
+    "resolved_at": null,
+    "notes": [],
+    "timeline": [
+      {
+        "timestamp": "2026-09-30T09:52:00Z",
+        "event": "Alert RedisDown fired for redis-cache"
+      },
+      {
+        "timestamp": "2026-09-30T09:55:00Z",
+        "event": "Alert HighErrorRate fired for users-api"
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-004",
+    "title": "API latency alert triggered",
+    "severity": "SEV-3",
+    "service": "api-gateway",
+    "environment": "production",
+    "status": "investigating",
+    "started_at": "2026-09-30T09:58:00Z",
+    "detected_at": "2026-09-30T09:58:00Z",
+    "detected_by": "alert:ALT-3005",
+    "reporter": "pagerduty",
+    "description": "HighLatencyP95 alert fired for api-gateway. Automatic incident; impact not yet assessed.",
+    "root_cause": null,
+    "resolution": null,
+    "resolved_at": null,
+    "notes": [],
+    "timeline": [
+      {
+        "timestamp": "2026-09-30T09:58:00Z",
+        "event": "Alert HighLatencyP95 fired for api-gateway"
+      },
+      {
+        "timestamp": "2026-09-30T10:01:00Z",
+        "event": "Alert HighLatencyP95 resolved"
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-005",
+    "title": "auth-service deployment stuck",
+    "severity": "SEV-3",
+    "service": "auth-service",
+    "environment": "production",
+    "status": "investigating",
+    "started_at": "2026-09-30T09:55:00Z",
+    "detected_at": "2026-09-30T10:05:30Z",
+    "detected_by": "alert:ALT-3006",
+    "reporter": "ci-pipeline",
+    "description": "Deployment deploy-8490 (v3.2.0) of auth-service has not completed. New pods are not becoming ready. Old pods still serving traffic.",
+    "root_cause": null,
+    "resolution": null,
+    "resolved_at": null,
+    "notes": [],
+    "timeline": [
+      {
+        "timestamp": "2026-09-30T10:05:30Z",
+        "event": "Alert DeploymentStuck fired for auth-service"
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-006",
+    "title": "Customers report delayed email notifications",
+    "severity": "SEV-3",
+    "service": "notification-service",
+    "environment": "production",
+    "status": "open",
+    "started_at": "2026-09-30T09:35:00Z",
+    "detected_at": "2026-09-30T10:08:00Z",
+    "detected_by": "support-ticket:TCK-5521",
+    "reporter": "support-team",
+    "description": "Several customers reported that order confirmation emails arrived 10-15 minutes late this morning. Please confirm whether there is an ongoing problem with notification-service.",
+    "root_cause": null,
+    "resolution": null,
+    "resolved_at": null,
+    "notes": [],
+    "timeline": [
+      {
+        "timestamp": "2026-09-30T10:08:00Z",
+        "event": "Incident created from support ticket TCK-5521"
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-007",
+    "title": "orders-api HTTP 500 after release v2.7.9",
+    "severity": "SEV-1",
+    "service": "orders-api",
+    "environment": "production",
+    "status": "resolved",
+    "started_at": "2026-09-29T08:03:00Z",
+    "detected_at": "2026-09-29T08:06:00Z",
+    "detected_by": "alert:HighErrorRate",
+    "reporter": "pagerduty",
+    "description": "orders-api returned HTTP 500 for orders with legacy status values immediately after deploy-8460.",
+    "root_cause": "deploy-8460 (v2.7.9) introduced a strict OrderStatus enum that rejected legacy status strings still present in orders-db.",
+    "resolution": "Rolled back to v2.7.8 via deploy-8461 after human approval. Fix re-landed as v2.8.0 with legacy mapping.",
+    "resolved_at": "2026-09-29T08:40:00Z",
+    "notes": [
+      {
+        "timestamp": "2026-09-29T08:20:00Z",
+        "author": "sre-agent",
+        "note": "Errors correlate with deploy-8460; logs show OrderStatus validation errors."
+      },
+      {
+        "timestamp": "2026-09-29T08:33:00Z",
+        "author": "priya.n",
+        "note": "Rollback approved."
+      }
+    ],
+    "timeline": [
+      {
+        "timestamp": "2026-09-29T08:06:00Z",
+        "event": "Alert HighErrorRate fired"
+      },
+      {
+        "timestamp": "2026-09-29T08:33:00Z",
+        "event": "Rollback of deploy-8460 approved by priya.n"
+      },
+      {
+        "timestamp": "2026-09-29T08:37:00Z",
+        "event": "deploy-8461 completed"
+      },
+      {
+        "timestamp": "2026-09-29T08:40:00Z",
+        "event": "Service healthy; incident resolved"
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-008",
+    "title": "payments-api checkout failures",
+    "severity": "SEV-2",
+    "service": "payments-api",
+    "environment": "production",
+    "status": "resolved",
+    "started_at": "2026-09-28T02:00:00Z",
+    "detected_at": "2026-09-28T02:04:00Z",
+    "detected_by": "alert:HighErrorRate",
+    "reporter": "pagerduty",
+    "description": "All charge requests failing with provider errors.",
+    "root_cause": "The mTLS client certificate used to call payment-provider expired at 02:00 UTC.",
+    "resolution": "Rotated client certificate. A proposed restart of payments-api was rejected by the on-call engineer because logs showed a TLS handshake failure, not a service fault.",
+    "resolved_at": "2026-09-28T02:48:00Z",
+    "notes": [
+      {
+        "timestamp": "2026-09-28T02:15:00Z",
+        "author": "sre-agent",
+        "note": "Proposed restart_service(payments-api)."
+      },
+      {
+        "timestamp": "2026-09-28T02:16:00Z",
+        "author": "marco.b",
+        "note": "Rejected: logs show 'certificate has expired' from provider handshake. Restart will not help."
+      },
+      {
+        "timestamp": "2026-09-28T02:30:00Z",
+        "author": "sre-agent",
+        "note": "Confirmed client cert expiry; escalated to payments team for cert rotation."
+      }
+    ],
+    "timeline": [
+      {
+        "timestamp": "2026-09-28T02:04:00Z",
+        "event": "Alert fired"
+      },
+      {
+        "timestamp": "2026-09-28T02:16:00Z",
+        "event": "Restart proposal rejected"
+      },
+      {
+        "timestamp": "2026-09-28T02:45:00Z",
+        "event": "Certificate rotated"
+      },
+      {
+        "timestamp": "2026-09-28T02:48:00Z",
+        "event": "Incident resolved"
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-009",
+    "title": "inventory-api HTTP 500 on stock updates",
+    "severity": "SEV-2",
+    "service": "inventory-api",
+    "environment": "production",
+    "status": "investigating",
+    "started_at": "2026-09-30T10:01:00Z",
+    "detected_at": "2026-09-30T10:03:00Z",
+    "detected_by": "alert:ALT-3007",
+    "reporter": "pagerduty",
+    "description": "PUT /api/inventory/{sku} intermittently returns HTTP 500. Warehouse integrations are retrying and amplifying load.",
+    "root_cause": null,
+    "resolution": null,
+    "resolved_at": null,
+    "notes": [],
+    "timeline": [
+      {
+        "timestamp": "2026-09-30T10:03:00Z",
+        "event": "Alert HighErrorRate fired for inventory-api"
+      }
+    ]
+  },
+  {
+    "incident_id": "INC-010",
+    "title": "search-api database connection timeouts",
+    "severity": "SEV-2",
+    "service": "search-api",
+    "environment": "production",
+    "status": "investigating",
+    "started_at": "2026-09-30T09:51:00Z",
+    "detected_at": "2026-09-30T09:53:00Z",
+    "detected_by": "alert:ALT-3008",
+    "reporter": "pagerduty",
+    "description": "search-api logs are full of database connection timeouts and roughly half of search requests fail. The database team reports postgres is healthy.",
+    "root_cause": null,
+    "resolution": null,
+    "resolved_at": null,
+    "notes": [],
+    "timeline": [
+      {
+        "timestamp": "2026-09-30T09:53:00Z",
+        "event": "Alert DatabaseConnectionTimeouts fired for search-api"
+      }
+    ]
+  }
+]
