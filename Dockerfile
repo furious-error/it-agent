@@ -6,6 +6,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app ./app
 COPY mcp_server ./mcp_server
 COPY data ./data
+COPY evaluation ./evaluation
 
 ENV PYTHONUNBUFFERED=1
 EXPOSE 8000

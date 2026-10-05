@@ -5,6 +5,8 @@
 POST /webhook starts a run and returns immediately. The graph keeps going in
 the background until it finishes or pauses for a high-risk tool. Poll
 GET /runs/{run_id}. POST /approval resumes the same checkpoint.
+POST /judge grades Error Recovery traces in the background. Poll
+GET /judge/{job_id}.
 
 A natural-language report with no incident_id is stored as a new incident
 before the model runs. Ids come from INCIDENT_SEQ_FILE, so two reports do not
@@ -18,13 +20,17 @@ import uuid
 from fastapi import BackgroundTasks, FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
+from evaluation.judge import DEFAULT_TRACES, grade_all, load_traces
+
 from .config import ConfigError, load_settings
 from .runtime import (
     begin_run,
     execute_investigation,
     normalize_decision,
+    read_judge,
     read_status,
     resume_investigation,
+    write_judge,
     write_status,
 )
 from .telemetry import init_tracing
@@ -40,6 +46,16 @@ class WebhookRequest(BaseModel):
 class ApprovalRequest(BaseModel):
     run_id: str = Field(min_length=1)
     decision: str = Field(min_length=1)
+
+
+class JudgeTrace(BaseModel):
+    incident_id: str | None = None
+    scenario: str | None = None
+    trace: list = Field(min_length=1)
+
+
+class JudgeRequest(BaseModel):
+    traces: list[JudgeTrace] | None = None
 
 
 @app.get("/health")
@@ -90,6 +106,65 @@ def approval(body: ApprovalRequest, background: BackgroundTasks) -> dict[str, st
     write_status(record)
     background.add_task(resume_investigation, body.run_id, decision)
     return {"run_id": body.run_id, "incident_id": record.get("incident_id"), "status": "running"}
+
+
+@app.post("/judge", status_code=202)
+def judge(body: JudgeRequest, background: BackgroundTasks) -> dict[str, str | int | None]:
+    """Grade Error Recovery. Omit traces to score the ten historical investigations."""
+    _require_settings()
+    try:
+        traces = _judge_traces(body)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    job_id = uuid.uuid4().hex[:12]
+    write_judge(
+        {
+            "job_id": job_id,
+            "status": "running",
+            "metric": "error_recovery",
+            "scale": "1-5",
+            "count": len(traces),
+            "average_error_recovery_score": None,
+            "scores": [],
+            "error": None,
+        }
+    )
+    background.add_task(execute_judge, job_id, traces)
+    return {"job_id": job_id, "status": "running", "count": len(traces)}
+
+
+@app.get("/judge/{job_id}")
+def get_judge(job_id: str) -> dict:
+    record = read_judge(job_id)
+    if record is None:
+        raise HTTPException(status_code=404, detail=f"Unknown judge job '{job_id}'.")
+    return record
+
+
+def execute_judge(job_id: str, traces: list[dict]) -> None:
+    try:
+        report = grade_all(traces)
+        report["job_id"] = job_id
+        report["status"] = "final"
+        report["error"] = None
+        write_judge(report)
+    except Exception as exc:
+        current = read_judge(job_id) or {"job_id": job_id, "scores": []}
+        current["status"] = "failed"
+        current["error"] = f"{type(exc).__name__}: {exc}"
+        write_judge(current)
+
+
+def _judge_traces(body: JudgeRequest) -> list[dict]:
+    if body.traces is None:
+        if not DEFAULT_TRACES.is_file():
+            raise FileNotFoundError(f"Historical traces are missing: {DEFAULT_TRACES}")
+        return load_traces(DEFAULT_TRACES)
+    if not body.traces:
+        raise ValueError("traces must be a non-empty list, or omit the field to grade the historical set.")
+    return [item.model_dump() for item in body.traces]
 
 
 def _require_settings() -> None:

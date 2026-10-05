@@ -1,7 +1,7 @@
 from fastapi.testclient import TestClient
 
 from app.api import app
-from app.runtime import read_status, write_status
+from app.runtime import read_judge, read_status, write_status
 
 
 def _isolate(tmp_path, monkeypatch):
@@ -11,6 +11,7 @@ def _isolate(tmp_path, monkeypatch):
     monkeypatch.setenv("GEMINI_API_KEY", "test-key")
     monkeypatch.setenv("LANGFUSE_PUBLIC_KEY", "")
     monkeypatch.setenv("LANGFUSE_SECRET_KEY", "")
+    monkeypatch.setenv("JUDGE_DIR", str(tmp_path / "judge"))
     monkeypatch.setattr("app.api.execute_investigation", lambda run_id, message, incident_id: None)
     monkeypatch.setattr("app.api.resume_investigation", lambda run_id, decision: None)
 
@@ -91,3 +92,67 @@ def test_approval_requires_a_paused_run(tmp_path, monkeypatch):
     finished = client.post("/approval", json={"run_id": "done1", "decision": "reject"})
     assert finished.status_code == 409
     assert "final" in finished.json()["detail"]
+
+
+def test_judge_historical_set_is_scored_in_the_background(tmp_path, monkeypatch):
+    _isolate(tmp_path, monkeypatch)
+
+    def fake(job_id, traces):
+        assert len(traces) == 10
+        from app.runtime import write_judge
+
+        write_judge(
+            {
+                "job_id": job_id,
+                "status": "final",
+                "metric": "error_recovery",
+                "scale": "1-5",
+                "count": len(traces),
+                "average_error_recovery_score": 4.2,
+                "scores": [{"incident_id": traces[0]["incident_id"], "score": 5, "explanation": "recovered", "evidence": []}],
+                "error": None,
+            }
+        )
+
+    monkeypatch.setattr("app.api.execute_judge", fake)
+    client = TestClient(app)
+    started = client.post("/judge", json={})
+    assert started.status_code == 202
+    assert started.json()["count"] == 10
+    report = client.get(f"/judge/{started.json()['job_id']}")
+    assert report.status_code == 200
+    assert report.json()["average_error_recovery_score"] == 4.2
+    assert read_judge(started.json()["job_id"])["status"] == "final"
+
+
+def test_judge_accepts_one_posted_trace(tmp_path, monkeypatch):
+    _isolate(tmp_path, monkeypatch)
+    seen = {}
+
+    def fake(job_id, traces):
+        seen["traces"] = traces
+
+    monkeypatch.setattr("app.api.execute_judge", fake)
+    client = TestClient(app)
+    body = {
+        "traces": [
+            {
+                "incident_id": "INC-006",
+                "scenario": "bad timestamp",
+                "trace": [{"tool": "search_logs", "arguments": {"start_time": "invalid"}}, {"result": {"status": 400, "error": "Invalid timestamp"}}],
+            }
+        ]
+    }
+    started = client.post("/judge", json=body)
+    assert started.status_code == 202
+    assert started.json()["count"] == 1
+    assert seen["traces"][0]["incident_id"] == "INC-006"
+    missing = client.get("/judge/does-not-exist")
+    assert missing.status_code == 404
+
+
+def test_judge_rejects_an_empty_trace_list(tmp_path, monkeypatch):
+    _isolate(tmp_path, monkeypatch)
+    client = TestClient(app)
+    response = client.post("/judge", json={"traces": []})
+    assert response.status_code == 422

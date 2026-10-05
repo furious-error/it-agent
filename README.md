@@ -199,6 +199,13 @@ curl -s localhost:8000/runs/<run_id>
 curl -s -X POST localhost:8000/approval -H "content-type: application/json" -d "{\"run_id\":\"<run_id>\",\"decision\":\"approve\"}"
 ```
 
+`POST /judge` scores Error Recovery with Gemini, one trace at a time. With an empty body it grades the ten traces in `evaluation/traces.json`. Poll `GET /judge/{job_id}` until `status` is `final`; the body includes `average_error_recovery_score` and each explanation. A custom set is a `traces` array of `{incident_id, scenario, trace}`.
+
+```bash
+curl -s -X POST localhost:8000/judge -H "content-type: application/json" -d "{}"
+curl -s localhost:8000/judge/<job_id>
+```
+
 A message with no `incident_id` opens a new incident first (`INC-011`, then `INC-012`, and so on). Passing `"incident_id": "INC-001"` investigates that seeded ticket instead.
 
 `GET /health` is the process check. Checkpoints default to `var/checkpoints.sqlite` and run databases to `var/runs/`. Override them with `CHECKPOINT_PATH` and `RUNS_DIR` when the disk must outlive a container, and keep a single worker so SQLite is not shared across processes.

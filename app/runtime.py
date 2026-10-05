@@ -58,6 +58,25 @@ def status_path(run_id: str) -> Path:
     return runs_dir() / f"{run_id}.status.json"
 
 
+def judge_dir() -> Path:
+    return Path(os.environ.get("JUDGE_DIR", "var/judge"))
+
+
+def read_judge(job_id: str) -> dict[str, Any] | None:
+    path = judge_dir() / f"{job_id}.json"
+    if not path.is_file():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def write_judge(record: dict[str, Any]) -> None:
+    path = judge_dir() / f"{record['job_id']}.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(".tmp")
+    temporary.write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
+    temporary.replace(path)
+
+
 def read_status(run_id: str) -> dict[str, Any] | None:
     path = status_path(run_id)
     if not path.is_file():

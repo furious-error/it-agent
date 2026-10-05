@@ -141,24 +141,30 @@ def average(scores: list[dict[str, Any]]) -> float:
     return round(statistics.fmean(item["score"] for item in scores), 2)
 
 
-def run(traces_path: Path, out_path: Path | None) -> dict[str, Any]:
+def grade_all(traces: list[dict[str, Any]], *, pace_seconds: float = 13) -> dict[str, Any]:
+    """Grade each trace with its own Gemini call. Pacing stays under the free-tier limit."""
+    if not traces:
+        raise ValueError("traces must be a non-empty list")
     settings = load_settings()
     init_tracing()
     client = genai.Client(api_key=settings.api_key)
-    traces = load_traces(traces_path)
     graded = []
     for index, item in enumerate(traces):
-        if index:
-            time.sleep(13)
+        if index and pace_seconds:
+            time.sleep(pace_seconds)
         graded.append(grade_trace(client, settings.model, item))
-    report = {
+    flush()
+    return {
         "metric": "error_recovery",
         "scale": "1-5",
         "count": len(graded),
         "average_error_recovery_score": average(graded),
         "scores": graded,
     }
-    flush()
+
+
+def run(traces_path: Path, out_path: Path | None) -> dict[str, Any]:
+    report = grade_all(load_traces(traces_path))
     if out_path:
         out_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     return report
