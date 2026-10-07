@@ -114,8 +114,20 @@ class GeminiReasoner:
         with observation(as_type="generation", name=PROPOSE_NEXT_ACTION, model=self.model) as gen:
             response = self.client.models.generate_content(model=self.model, contents=contents, config=config)
             prompt, output, usage = generation_io(contents, response)
-            gen.update(input=prompt, output=output, usage_details=usage, model=self.model)
+            gen.update(
+                input=prompt,
+                output=output,
+                usage_details=usage,
+                model=self.model,
+                metadata={"tools": [_tool_brief(tool) for tool in tools or []]},
+            )
             return response
+
+
+def _tool_brief(tool: Any) -> dict[str, str]:
+    if not isinstance(tool, dict):
+        return {"name": "", "description": ""}
+    return {"name": str(tool.get("name") or ""), "description": str(tool.get("description") or "")}
 
 
 def _model_content(response: Any) -> Any | None:

@@ -66,7 +66,7 @@ def build_graph(
             return {}
         with observation(as_type="tool", name=LIST_TOOLS, input={}) as obs:
             catalog = tools.list_tools()
-            obs.update(output={"count": len(catalog), "names": [item["name"] for item in catalog]})
+            obs.update(output={"count": len(catalog), "tools": [_described(item) for item in catalog]})
             return {"available_tools": catalog}
 
     def compact(state: AgentState) -> dict[str, Any]:
@@ -197,25 +197,26 @@ def build_graph(
                 rejected.append(decision["signature"])
                 executed = False
                 latency_ms = 0.0
-                _record_tool_observation(call, result, executed=False, reason="human_rejected")
+                _record_tool_observation(call, result, executed=False, reason="human_rejected", description=_tool_description(state, call["name"]))
             elif not decision.get("allowed") and not decision.get("requires_approval"):
                 result = {"status": decision.get("status", 400), "error": decision.get("error")}
                 executed = False
                 latency_ms = 0.0
-                _record_tool_observation(call, result, executed=False, reason="hook_denied")
+                _record_tool_observation(call, result, executed=False, reason="hook_denied", description=_tool_description(state, call["name"]))
             else:
                 started = time.perf_counter()
+                description = _tool_description(state, call["name"])
                 with observation(
                     as_type=observation_type_for_tool(call["name"]),
                     name=call["name"],
                     input=call["arguments"],
-                    metadata={"mcp": True},
+                    metadata={"mcp": True, "description": description},
                 ) as tool_obs:
                     try:
                         result = tools.call_tool(call["name"], call["arguments"])
                     except Exception as exc:  # the tool process failed; the model can adapt
                         result = {"status": 500, "error": f"{type(exc).__name__}: {exc}"}
-                    tool_obs.update(output=result, metadata={"status": result.get("status"), "executed": True})
+                    tool_obs.update(output=result, metadata={"mcp": True, "description": description, "status": result.get("status"), "executed": True})
                 latency_ms = (time.perf_counter() - started) * 1000
                 executed = True
                 service, environment = _learn_context(call["name"], result, service, environment)
@@ -339,12 +340,23 @@ def _is_approval(decision: Any) -> bool:
     return str(decision).strip().lower() in {"approve", "approved", "yes", "y"}
 
 
-def _record_tool_observation(call: dict[str, Any], result: dict[str, Any], *, executed: bool, reason: str) -> None:
+def _described(tool: dict[str, Any]) -> dict[str, str]:
+    return {"name": tool.get("name") or "", "description": tool.get("description") or ""}
+
+
+def _tool_description(state: AgentState, name: str) -> str:
+    for tool in state.get("available_tools") or []:
+        if tool.get("name") == name:
+            return str(tool.get("description") or "")
+    return ""
+
+
+def _record_tool_observation(call: dict[str, Any], result: dict[str, Any], *, executed: bool, reason: str, description: str) -> None:
     with observation(
         as_type=observation_type_for_tool(call["name"]),
         name=call["name"],
         input=call["arguments"],
-        metadata={"mcp": False, "executed": executed, "reason": reason},
+        metadata={"mcp": False, "executed": executed, "reason": reason, "description": description},
     ) as tool_obs:
         tool_obs.update(output=result)
 
