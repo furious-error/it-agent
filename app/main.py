@@ -41,7 +41,7 @@ VAR = Path("var")
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Investigate a simulated AcmeCloud incident with Gemini.")
+    parser = argparse.ArgumentParser(description="Investigate a simulated incident with Gemini.")
     parser.add_argument("--incident", help="Seeded incident id, for example INC-001.")
     parser.add_argument("--message", help="User report. Defaults to the incident title and description.")
     parser.add_argument("--thread", help="Checkpoint thread id. A new id is generated when omitted.")

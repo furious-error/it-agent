@@ -35,7 +35,7 @@ from .runtime import (
 )
 from .telemetry import init_tracing
 
-app = FastAPI(title="AcmeCloud IT agent")
+app = FastAPI(title="IT agent")
 
 
 class WebhookRequest(BaseModel):

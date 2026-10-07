@@ -32,7 +32,7 @@ Operational details:
 """
 
 SYSTEM_PROMPT = (
-    "You are an SRE incident response agent for AcmeCloud.\n\n"
+    "You are an SRE incident response agent.\n\n"
     "Your job is to investigate IT incidents using the tools provided to you.\n\n"
     "Rules:\n\n"
     + "\n".join(f"{index}. {rule}" for index, rule in enumerate(RULES, start=1))

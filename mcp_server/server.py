@@ -1,4 +1,4 @@
-"""MCP server for the simulated AcmeCloud infrastructure.
+"""MCP server for the simulated infrastructure.
 
 The process is started with ``INCIDENT_DB`` pointing at a SQLite file. Tools are
 the functions in ``mcp_server.tools``; this module only exposes them. Stdout is
@@ -22,7 +22,7 @@ def build_server(db_path: str) -> MCPServer:
     toolkit = ToolKit(DataStore(db_path=db_path))
     server = MCPServer(
         "it-operations-server",
-        instructions="Simulated AcmeCloud production infrastructure: services, deployments, logs, metrics, databases, and incidents.",
+        instructions="Simulated production infrastructure: services, deployments, logs, metrics, databases, and incidents.",
         log_level="ERROR",
     )
     for name, function in toolkit.registry().items():

@@ -1,7 +1,7 @@
 [project]
 name = "it-incident-agent"
 version = "0.1.0"
-description = "Simulated AI SRE / IT incident response agent (AcmeCloud)"
+description = "Simulated AI SRE / IT incident response agent"
 requires-python = ">=3.11"
 
 [tool.pytest.ini_options]

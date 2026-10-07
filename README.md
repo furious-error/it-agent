@@ -1,24 +1,10 @@
-# IT Incident Response Agent (AcmeCloud simulation)
+# IT Incident Response Agent
 
 A simulated AI SRE agent. A user reports an incident; the agent investigates a
 fake production environment through tools, diagnoses the cause, asks a human
 before dangerous remediation, executes, verifies recovery, and records the
-workflow. The design is described in `stuff.md`.
+workflow.
 
-## Status
-
-| Milestone | Scope | State |
-| --- | --- | --- |
-| 1 | Fake infrastructure + query functions + tests (no LLM) | **done** |
-| 2 | Gemini reasoning loop over the tools | **done** |
-| 3 | LangGraph state machine | **done** |
-| 4 | Tools served over MCP, agent as MCP client | **done** |
-| 5 | Pre-tool and post-tool hooks | **done** |
-| 6 | Human approval interrupt for high-risk tools | **done** |
-| 7 | Compaction and SQLite checkpointing | **done** |
-| 8 | Langfuse observability of the agent lifecycle | **done** |
-| 9 | LLM-as-judge Error Recovery on 10 traces | **done** |
-| 10 | FastAPI and Docker | **done** |
 
 ## Layout
 

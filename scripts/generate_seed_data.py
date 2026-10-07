@@ -1,4 +1,4 @@
-"""Deterministically generate the simulated AcmeCloud infrastructure seed data.
+"""Deterministically generate the simulated infrastructure seed data.
 
 Run:  python scripts/generate_seed_data.py
 

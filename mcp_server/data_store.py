@@ -1,4 +1,4 @@
-"""SQLite-backed store for the simulated AcmeCloud infrastructure.
+"""SQLite-backed store for the simulated infrastructure.
 
 JSON files under ``data/`` are the seed; on construction they are loaded into a
 SQLite database (in-memory by default, or a file path for persistence). All
